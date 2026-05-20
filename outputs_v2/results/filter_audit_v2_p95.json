@@ -1,0 +1,347 @@
+{
+  "_meta": {
+    "threshold_pct": 95.0,
+    "ratios": [
+      1.0,
+      2.0
+    ],
+    "pool_ratio": 2.5,
+    "pca_components": 200,
+    "output_threshold_tag": "p95",
+    "input_hashes": {
+      "pool_name": "train_augmented_r2.5",
+      "pool_manifest_hash": "1cdef852088157e8",
+      "pool_feature_hash": "478c558385f4b3a0",
+      "pool_label_hash": "8acae76f3ae242dd",
+      "real_manifest_hash": "4f22a2372272087b",
+      "real_feature_hash": "74869991a74e68fb",
+      "real_label_hash": "c77d45a52c0bf34b"
+    }
+  },
+  "glioma_ax": {
+    "n_real": 394,
+    "n_synth": 985,
+    "n_rejected_mahal": 58,
+    "n_after_mahal": 927,
+    "threshold": 252.9407,
+    "median_m2_real": 157.8909,
+    "p975_m2_real": 279.4748,
+    "median_m2_synth": 138.1998,
+    "n_features": 200,
+    "skipped": false,
+    "per_ratio": {
+      "1.0": {
+        "n_target": 394,
+        "n_after_mahal": 927,
+        "n_after_fps": 394,
+        "n_kept": 394
+      },
+      "2.0": {
+        "n_target": 788,
+        "n_after_mahal": 927,
+        "n_after_fps": 788,
+        "n_kept": 788
+      }
+    }
+  },
+  "glioma_co": {
+    "n_real": 430,
+    "n_synth": 1075,
+    "n_rejected_mahal": 28,
+    "n_after_mahal": 1047,
+    "threshold": 254.2353,
+    "median_m2_real": 159.3869,
+    "p975_m2_real": 273.8371,
+    "median_m2_synth": 144.1997,
+    "n_features": 200,
+    "skipped": false,
+    "per_ratio": {
+      "1.0": {
+        "n_target": 430,
+        "n_after_mahal": 1047,
+        "n_after_fps": 430,
+        "n_kept": 430
+      },
+      "2.0": {
+        "n_target": 860,
+        "n_after_mahal": 1047,
+        "n_after_fps": 860,
+        "n_kept": 860
+      }
+    }
+  },
+  "glioma_sa": {
+    "n_real": 323,
+    "n_synth": 808,
+    "n_rejected_mahal": 45,
+    "n_after_mahal": 763,
+    "threshold": 224.2675,
+    "median_m2_real": 158.934,
+    "p975_m2_real": 243.0354,
+    "median_m2_synth": 129.473,
+    "n_features": 200,
+    "skipped": false,
+    "per_ratio": {
+      "1.0": {
+        "n_target": 323,
+        "n_after_mahal": 763,
+        "n_after_fps": 323,
+        "n_kept": 323
+      },
+      "2.0": {
+        "n_target": 646,
+        "n_after_mahal": 763,
+        "n_after_fps": 646,
+        "n_kept": 646
+      }
+    }
+  },
+  "meningioma_ax": {
+    "n_real": 361,
+    "n_synth": 902,
+    "n_rejected_mahal": 48,
+    "n_after_mahal": 854,
+    "threshold": 267.5865,
+    "median_m2_real": 160.0672,
+    "p975_m2_real": 293.9578,
+    "median_m2_synth": 148.2149,
+    "n_features": 200,
+    "skipped": false,
+    "per_ratio": {
+      "1.0": {
+        "n_target": 361,
+        "n_after_mahal": 854,
+        "n_after_fps": 361,
+        "n_kept": 361
+      },
+      "2.0": {
+        "n_target": 722,
+        "n_after_mahal": 854,
+        "n_after_fps": 722,
+        "n_kept": 722
+      }
+    }
+  },
+  "meningioma_co": {
+    "n_real": 407,
+    "n_synth": 1018,
+    "n_rejected_mahal": 167,
+    "n_after_mahal": 851,
+    "threshold": 240.8953,
+    "median_m2_real": 157.4866,
+    "p975_m2_real": 262.9732,
+    "median_m2_synth": 150.5468,
+    "n_features": 200,
+    "skipped": false,
+    "per_ratio": {
+      "1.0": {
+        "n_target": 407,
+        "n_after_mahal": 851,
+        "n_after_fps": 407,
+        "n_kept": 407
+      },
+      "2.0": {
+        "n_target": 814,
+        "n_after_mahal": 851,
+        "n_after_fps": 814,
+        "n_kept": 814
+      }
+    }
+  },
+  "meningioma_sa": {
+    "n_real": 464,
+    "n_synth": 1160,
+    "n_rejected_mahal": 71,
+    "n_after_mahal": 1089,
+    "threshold": 241.8589,
+    "median_m2_real": 158.6053,
+    "p975_m2_real": 271.8756,
+    "median_m2_synth": 144.6866,
+    "n_features": 200,
+    "skipped": false,
+    "per_ratio": {
+      "1.0": {
+        "n_target": 464,
+        "n_after_mahal": 1089,
+        "n_after_fps": 464,
+        "n_kept": 464
+      },
+      "2.0": {
+        "n_target": 928,
+        "n_after_mahal": 1089,
+        "n_after_fps": 928,
+        "n_kept": 928
+      }
+    }
+  },
+  "no_tumor_ax": {
+    "n_real": 352,
+    "n_synth": 880,
+    "n_rejected_mahal": 114,
+    "n_after_mahal": 766,
+    "threshold": 265.8069,
+    "median_m2_real": 142.9698,
+    "p975_m2_real": 284.6755,
+    "median_m2_synth": 163.0686,
+    "n_features": 200,
+    "skipped": false,
+    "per_ratio": {
+      "1.0": {
+        "n_target": 352,
+        "n_after_mahal": 766,
+        "n_after_fps": 352,
+        "n_kept": 352
+      },
+      "2.0": {
+        "n_target": 704,
+        "n_after_mahal": 766,
+        "n_after_fps": 704,
+        "n_kept": 704
+      }
+    }
+  },
+  "no_tumor_co": {
+    "n_real": 310,
+    "n_synth": 775,
+    "n_rejected_mahal": 106,
+    "n_after_mahal": 669,
+    "threshold": 212.9137,
+    "median_m2_real": 158.3006,
+    "p975_m2_real": 227.6945,
+    "median_m2_synth": 142.9192,
+    "n_features": 200,
+    "skipped": false,
+    "per_ratio": {
+      "1.0": {
+        "n_target": 310,
+        "n_after_mahal": 669,
+        "n_after_fps": 310,
+        "n_kept": 310
+      },
+      "2.0": {
+        "n_target": 620,
+        "n_after_mahal": 669,
+        "n_after_fps": 620,
+        "n_kept": 620
+      }
+    }
+  },
+  "no_tumor_sa": {
+    "n_real": 405,
+    "n_synth": 1012,
+    "n_rejected_mahal": 163,
+    "n_after_mahal": 849,
+    "threshold": 267.3532,
+    "median_m2_real": 165.4072,
+    "p975_m2_real": 288.6299,
+    "median_m2_synth": 168.1426,
+    "n_features": 200,
+    "skipped": false,
+    "per_ratio": {
+      "1.0": {
+        "n_target": 405,
+        "n_after_mahal": 849,
+        "n_after_fps": 405,
+        "n_kept": 405
+      },
+      "2.0": {
+        "n_target": 810,
+        "n_after_mahal": 849,
+        "n_after_fps": 810,
+        "n_kept": 810
+      }
+    }
+  },
+  "pituitary_ax": {
+    "n_real": 424,
+    "n_synth": 1060,
+    "n_rejected_mahal": 114,
+    "n_after_mahal": 946,
+    "threshold": 233.1197,
+    "median_m2_real": 155.6269,
+    "p975_m2_real": 260.056,
+    "median_m2_synth": 137.6719,
+    "n_features": 200,
+    "skipped": false,
+    "per_ratio": {
+      "1.0": {
+        "n_target": 424,
+        "n_after_mahal": 946,
+        "n_after_fps": 424,
+        "n_kept": 424
+      },
+      "2.0": {
+        "n_target": 848,
+        "n_after_mahal": 946,
+        "n_after_fps": 848,
+        "n_kept": 848
+      }
+    }
+  },
+  "pituitary_co": {
+    "n_real": 505,
+    "n_synth": 1262,
+    "n_rejected_mahal": 114,
+    "n_after_mahal": 1148,
+    "threshold": 246.3084,
+    "median_m2_real": 160.7382,
+    "p975_m2_real": 288.4586,
+    "median_m2_synth": 169.955,
+    "n_features": 200,
+    "skipped": false,
+    "per_ratio": {
+      "1.0": {
+        "n_target": 505,
+        "n_after_mahal": 1148,
+        "n_after_fps": 505,
+        "n_kept": 505
+      },
+      "2.0": {
+        "n_target": 1010,
+        "n_after_mahal": 1148,
+        "n_after_fps": 1010,
+        "n_kept": 1010
+      }
+    }
+  },
+  "pituitary_sa": {
+    "n_real": 521,
+    "n_synth": 1302,
+    "n_rejected_mahal": 319,
+    "n_after_mahal": 983,
+    "threshold": 224.1258,
+    "median_m2_real": 163.2462,
+    "p975_m2_real": 245.616,
+    "median_m2_synth": 179.6644,
+    "n_features": 200,
+    "skipped": false,
+    "per_ratio": {
+      "1.0": {
+        "n_target": 521,
+        "n_after_mahal": 983,
+        "n_after_fps": 521,
+        "n_kept": 521
+      },
+      "2.0": {
+        "n_target": 1042,
+        "n_after_mahal": 983,
+        "n_after_fps": 983,
+        "n_kept": 983
+      }
+    }
+  },
+  "_totals": {
+    "r1": {
+      "n_synth_pool": 12239,
+      "n_synth_kept": 4896,
+      "n_synth_drop": 7343,
+      "pct_dropped": 60.0
+    },
+    "r2": {
+      "n_synth_pool": 12239,
+      "n_synth_kept": 9733,
+      "n_synth_drop": 2506,
+      "pct_dropped": 20.48
+    }
+  }
+}

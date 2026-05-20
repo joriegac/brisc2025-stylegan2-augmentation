@@ -1,0 +1,5 @@
+model	panel	comparison	metric	y	delta_pp	err_minus	err_plus	ci_low_pp	ci_high_pp	p_holm	p_raw	significant
+mobilevitv2	tumour	augmented_r2	per_tumour_f1:meningioma	2.92	1.77758396	1.01621854	1.08151187	0.761365416	2.85909583	0.0389922016	0.00099980004	1
+mobilevitv2	tumour	augmented_r2	per_tumour_f1:no_tumor	1.92	4.66545687	1.62611238	1.8014246	3.03934449	6.46688147	0.0103979204	0.000199960008	1
+mobilevitv2	tumour	augmented_r2	tumour_accuracy	6.92	0.96	0.58	0.62	0.38	1.58	0.0319936013	0.000799840032	1
+mobilevitv2	tumour	augmented_r2	tumour_macro_f1	5.92	1.35920758	0.620957151	0.651252801	0.738250425	2.01046038	0.0103979204	0.000199960008	1

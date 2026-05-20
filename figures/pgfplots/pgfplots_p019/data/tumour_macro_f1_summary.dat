@@ -1,0 +1,6 @@
+head	experiment	metric	x	mean	halfci	n
+tumour	baseline	macro_f1	1.000000	0.939787199	0.0056235182	10
+tumour	augmented_r1	macro_f1	2.000000	0.948461609	0.00587064268	10
+tumour	augmented_r2	macro_f1	3.000000	0.950726256	0.00411270164	10
+tumour	filtered_r1	macro_f1	4.000000	0.947687079	0.0055265038	10
+tumour	filtered_r2	macro_f1	5.000000	0.949101004	0.00459204991	10

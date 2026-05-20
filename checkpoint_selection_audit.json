@@ -1,0 +1,314 @@
+{
+  "glioma_ax": {
+    "pure_fid": {
+      "kimg": 1000,
+      "fid": 25.1736,
+      "precision": 0.51894,
+      "recall": 0.083756,
+      "tier": "EXTRAORDINARY"
+    },
+    "three_stage": {
+      "kimg": 960,
+      "fid": 25.3603,
+      "precision": 0.5128,
+      "recall": 0.086294,
+      "tier": "EXTRAORDINARY",
+      "composite": 0.299547
+    },
+    "briefing": {
+      "kimg": 960,
+      "tier": "EXTRAORDINARY",
+      "fid": 25.36,
+      "p": 0.5128,
+      "r": 0.0863,
+      "n": 394
+    },
+    "real_n": 394
+  },
+  "glioma_co": {
+    "pure_fid": {
+      "kimg": 432,
+      "fid": 34.9133,
+      "precision": 0.57566,
+      "recall": 0.051163,
+      "tier": "EXCELLENT"
+    },
+    "three_stage": {
+      "kimg": 336,
+      "fid": 35.2673,
+      "precision": 0.61784,
+      "recall": 0.081395,
+      "tier": "EXCELLENT",
+      "composite": 0.34961749999999997
+    },
+    "briefing": {
+      "kimg": 336,
+      "tier": "EXCELLENT",
+      "fid": 35.27,
+      "p": 0.6178,
+      "r": 0.0814,
+      "n": 430
+    },
+    "real_n": 430
+  },
+  "glioma_sa": {
+    "pure_fid": {
+      "kimg": 240,
+      "fid": 53.0525,
+      "precision": 0.56932,
+      "recall": 0.027864,
+      "tier": "GOOD"
+    },
+    "three_stage": {
+      "kimg": 240,
+      "fid": 53.0525,
+      "precision": 0.56932,
+      "recall": 0.027864,
+      "tier": "GOOD",
+      "composite": 0.298592
+    },
+    "briefing": {
+      "kimg": 240,
+      "tier": "GOOD",
+      "fid": 53.05,
+      "p": 0.5693,
+      "r": 0.0279,
+      "n": 323
+    },
+    "real_n": 323
+  },
+  "meningioma_ax": {
+    "pure_fid": {
+      "kimg": 912,
+      "fid": 35.6795,
+      "precision": 0.6207,
+      "recall": 0.040189,
+      "tier": "EXCELLENT"
+    },
+    "three_stage": {
+      "kimg": 1000,
+      "fid": 36.1061,
+      "precision": 0.60656,
+      "recall": 0.056738,
+      "tier": "EXCELLENT",
+      "composite": 0.33164899999999997
+    },
+    "briefing": {
+      "kimg": 1000,
+      "tier": "EXCELLENT",
+      "fid": 36.11,
+      "p": 0.6066,
+      "r": 0.0567,
+      "n": 423
+    },
+    "real_n": 423
+  },
+  "meningioma_co": {
+    "pure_fid": {
+      "kimg": 192,
+      "fid": 53.4081,
+      "precision": 0.42132,
+      "recall": 0.021127,
+      "tier": "GOOD"
+    },
+    "three_stage": {
+      "kimg": 240,
+      "fid": 54.1796,
+      "precision": 0.42432,
+      "recall": 0.035211,
+      "tier": "GOOD",
+      "composite": 0.22976549999999998
+    },
+    "briefing": {
+      "kimg": 240,
+      "tier": "GOOD",
+      "fid": 54.18,
+      "p": 0.4243,
+      "r": 0.0352,
+      "n": 426
+    },
+    "real_n": 426
+  },
+  "meningioma_sa": {
+    "pure_fid": {
+      "kimg": 240,
+      "fid": 43.9283,
+      "precision": 0.49306,
+      "recall": 0.022917,
+      "tier": "EXCELLENT"
+    },
+    "three_stage": {
+      "kimg": 240,
+      "fid": 43.9283,
+      "precision": 0.49306,
+      "recall": 0.022917,
+      "tier": "EXCELLENT",
+      "composite": 0.2579885
+    },
+    "briefing": {
+      "kimg": 240,
+      "tier": "EXCELLENT",
+      "fid": 43.93,
+      "p": 0.4931,
+      "r": 0.0229,
+      "n": 480
+    },
+    "real_n": 480
+  },
+  "no_tumor_ax": {
+    "pure_fid": {
+      "kimg": 1000,
+      "fid": 46.5764,
+      "precision": 0.31112,
+      "recall": 0.036932,
+      "tier": "EXCELLENT"
+    },
+    "three_stage": {
+      "kimg": 672,
+      "fid": 48.2826,
+      "precision": 0.34462,
+      "recall": 0.076705,
+      "tier": "EXCELLENT",
+      "composite": 0.21066249999999997
+    },
+    "briefing": {
+      "kimg": 672,
+      "tier": "EXCELLENT",
+      "fid": 48.28,
+      "p": 0.3446,
+      "r": 0.0767,
+      "n": 352
+    },
+    "real_n": 352
+  },
+  "no_tumor_co": {
+    "pure_fid": {
+      "kimg": 288,
+      "fid": 51.8432,
+      "precision": 0.48392,
+      "recall": 0.009677,
+      "tier": "GOOD"
+    },
+    "three_stage": {
+      "kimg": 288,
+      "fid": 51.8432,
+      "precision": 0.48392,
+      "recall": 0.009677,
+      "tier": "GOOD",
+      "composite": 0.2467985
+    },
+    "briefing": {
+      "kimg": 288,
+      "tier": "GOOD",
+      "fid": 51.84,
+      "p": 0.4839,
+      "r": 0.0097,
+      "n": 310
+    },
+    "real_n": 310
+  },
+  "no_tumor_sa": {
+    "pure_fid": {
+      "kimg": 240,
+      "fid": 48.8971,
+      "precision": 0.33056,
+      "recall": 0.034568,
+      "tier": "EXCELLENT"
+    },
+    "three_stage": {
+      "kimg": 240,
+      "fid": 48.8971,
+      "precision": 0.33056,
+      "recall": 0.034568,
+      "tier": "EXCELLENT",
+      "composite": 0.182564
+    },
+    "briefing": {
+      "kimg": null,
+      "tier": null,
+      "fid": null,
+      "p": null,
+      "r": null,
+      "n": 405
+    },
+    "real_n": 405
+  },
+  "pituitary_ax": {
+    "pure_fid": {
+      "kimg": 336,
+      "fid": 27.5257,
+      "precision": 0.47702,
+      "recall": 0.021127,
+      "tier": "EXTRAORDINARY"
+    },
+    "three_stage": {
+      "kimg": 288,
+      "fid": 28.3998,
+      "precision": 0.48112,
+      "recall": 0.021127,
+      "tier": "EXTRAORDINARY",
+      "composite": 0.2511235
+    },
+    "briefing": {
+      "kimg": 288,
+      "tier": "EXTRAORDINARY",
+      "fid": 28.4,
+      "p": 0.4811,
+      "r": 0.0211,
+      "n": 426
+    },
+    "real_n": 426
+  },
+  "pituitary_co": {
+    "pure_fid": {
+      "kimg": 192,
+      "fid": 29.3808,
+      "precision": 0.359,
+      "recall": 0.031373,
+      "tier": "EXTRAORDINARY"
+    },
+    "three_stage": {
+      "kimg": 192,
+      "fid": 29.3808,
+      "precision": 0.359,
+      "recall": 0.031373,
+      "tier": "EXTRAORDINARY",
+      "composite": 0.19518649999999999
+    },
+    "briefing": {
+      "kimg": 192,
+      "tier": "EXTRAORDINARY",
+      "fid": 29.38,
+      "p": 0.359,
+      "r": 0.0314,
+      "n": 510
+    },
+    "real_n": 510
+  },
+  "pituitary_sa": {
+    "pure_fid": {
+      "kimg": 192,
+      "fid": 46.3919,
+      "precision": 0.3007,
+      "recall": 0.013436,
+      "tier": "EXCELLENT"
+    },
+    "three_stage": {
+      "kimg": 192,
+      "fid": 46.3919,
+      "precision": 0.3007,
+      "recall": 0.013436,
+      "tier": "EXCELLENT",
+      "composite": 0.157068
+    },
+    "briefing": {
+      "kimg": 192,
+      "tier": "EXCELLENT",
+      "fid": 46.39,
+      "p": 0.3007,
+      "r": 0.0134,
+      "n": 521
+    },
+    "real_n": 521
+  }
+}

@@ -1,0 +1,218 @@
+[
+  {
+    "score": 2.851853942871094,
+    "size": [
+      512,
+      512
+    ],
+    "bbox_area": 0.33941650390625,
+    "dark_frac": 0.7721405029296875,
+    "border_dark": 1.0,
+    "off": 0.0703125,
+    "aspect": 0.0,
+    "bright_border": 0.0,
+    "class": "glioma",
+    "plane": "ax",
+    "raw": "C:\\Users\\norie\\OneDrive\\RA1\\brisc2025\\classification_task\\train\\glioma\\brisc2025_train_00144_gl_ax_t1.jpg",
+    "prep": "C:\\Users\\norie\\OneDrive\\RA1\\brisc2025_preprocessed\\glioma_ax\\brisc2025_train_00144_gl_ax_t1.png",
+    "name": "brisc2025_train_00144_gl_ax_t1.jpg"
+  },
+  {
+    "score": 2.9208094940185547,
+    "size": [
+      512,
+      512
+    ],
+    "bbox_area": 0.3393402099609375,
+    "dark_frac": 0.7423057556152344,
+    "border_dark": 0.99751953125,
+    "off": 0.1240234375,
+    "aspect": 0.0,
+    "bright_border": 0.0,
+    "class": "glioma",
+    "plane": "co",
+    "raw": "C:\\Users\\norie\\OneDrive\\RA1\\brisc2025\\classification_task\\train\\glioma\\brisc2025_train_00612_gl_co_t1.jpg",
+    "prep": "C:\\Users\\norie\\OneDrive\\RA1\\brisc2025_preprocessed\\glioma_co\\brisc2025_train_00612_gl_co_t1.png",
+    "name": "brisc2025_train_00612_gl_co_t1.jpg"
+  },
+  {
+    "score": 2.636000442504883,
+    "size": [
+      512,
+      512
+    ],
+    "bbox_area": 0.43060302734375,
+    "dark_frac": 0.6647987365722656,
+    "border_dark": 0.99755859375,
+    "off": 0.095703125,
+    "aspect": 0.0,
+    "bright_border": 0.0,
+    "class": "glioma",
+    "plane": "sa",
+    "raw": "C:\\Users\\norie\\OneDrive\\RA1\\brisc2025\\classification_task\\train\\glioma\\brisc2025_train_00867_gl_sa_t1.jpg",
+    "prep": "C:\\Users\\norie\\OneDrive\\RA1\\brisc2025_preprocessed\\glioma_sa\\brisc2025_train_00867_gl_sa_t1.png",
+    "name": "brisc2025_train_00867_gl_sa_t1.jpg"
+  },
+  {
+    "score": 2.947072219848633,
+    "size": [
+      512,
+      512
+    ],
+    "bbox_area": 0.2942657470703125,
+    "dark_frac": 0.7576637268066406,
+    "border_dark": 1.0,
+    "off": 0.072265625,
+    "aspect": 0.0,
+    "bright_border": 0.0,
+    "class": "meningioma",
+    "plane": "ax",
+    "raw": "C:\\Users\\norie\\OneDrive\\RA1\\brisc2025\\classification_task\\train\\meningioma\\brisc2025_train_01532_me_ax_t1.jpg",
+    "prep": "C:\\Users\\norie\\OneDrive\\RA1\\brisc2025_preprocessed\\meningioma_ax\\brisc2025_train_01532_me_ax_t1.png",
+    "name": "brisc2025_train_01532_me_ax_t1.jpg"
+  },
+  {
+    "score": 2.76187907409668,
+    "size": [
+      512,
+      512
+    ],
+    "bbox_area": 0.3862571716308594,
+    "dark_frac": 0.7338600158691406,
+    "border_dark": 0.8899609375,
+    "off": 0.15234375,
+    "aspect": 0.0,
+    "bright_border": 0.0,
+    "class": "meningioma",
+    "plane": "co",
+    "raw": "C:\\Users\\norie\\OneDrive\\RA1\\brisc2025\\classification_task\\train\\meningioma\\brisc2025_train_01982_me_co_t1.jpg",
+    "prep": "C:\\Users\\norie\\OneDrive\\RA1\\brisc2025_preprocessed\\meningioma_co\\brisc2025_train_01982_me_co_t1.png",
+    "name": "brisc2025_train_01982_me_co_t1.jpg"
+  },
+  {
+    "score": 3.014887802124024,
+    "size": [
+      512,
+      512
+    ],
+    "bbox_area": 0.24195480346679688,
+    "dark_frac": 0.8119392395019531,
+    "border_dark": 0.9971875,
+    "off": 0.02734375,
+    "aspect": 0.0,
+    "bright_border": 0.0,
+    "class": "meningioma",
+    "plane": "sa",
+    "raw": "C:\\Users\\norie\\OneDrive\\RA1\\brisc2025\\classification_task\\train\\meningioma\\brisc2025_train_02348_me_sa_t1.jpg",
+    "prep": "C:\\Users\\norie\\OneDrive\\RA1\\brisc2025_preprocessed\\meningioma_sa\\brisc2025_train_02348_me_sa_t1.png",
+    "name": "brisc2025_train_02348_me_sa_t1.jpg"
+  },
+  {
+    "score": 3.235085521535155,
+    "size": [
+      216,
+      369
+    ],
+    "bbox_area": 0.33453778982234267,
+    "dark_frac": 0.7472774264779685,
+    "border_dark": 1.0,
+    "off": 0.04313459801264685,
+    "aspect": 0.5355182363563622,
+    "bright_border": 0.0,
+    "class": "no_tumor",
+    "plane": "ax",
+    "raw": "C:\\Users\\norie\\OneDrive\\RA1\\brisc2025\\classification_task\\train\\no_tumor\\brisc2025_train_02544_no_ax_t1.jpg",
+    "prep": "C:\\Users\\norie\\OneDrive\\RA1\\brisc2025_preprocessed\\no_tumor_ax\\brisc2025_train_02544_no_ax_t1.png",
+    "name": "brisc2025_train_02544_no_ax_t1.jpg"
+  },
+  {
+    "score": 3.304933960760288,
+    "size": [
+      216,
+      369
+    ],
+    "bbox_area": 0.2836745960052193,
+    "dark_frac": 0.772119341563786,
+    "border_dark": 1.0,
+    "off": 0.009089882565492258,
+    "aspect": 0.5355182363563622,
+    "bright_border": 0.0,
+    "class": "no_tumor",
+    "plane": "co",
+    "raw": "C:\\Users\\norie\\OneDrive\\RA1\\brisc2025\\classification_task\\train\\no_tumor\\brisc2025_train_03135_no_co_t1.jpg",
+    "prep": "C:\\Users\\norie\\OneDrive\\RA1\\brisc2025_preprocessed\\no_tumor_co\\brisc2025_train_03135_no_co_t1.png",
+    "name": "brisc2025_train_03135_no_co_t1.jpg"
+  },
+  {
+    "score": 2.6812337049522252,
+    "size": [
+      369,
+      369
+    ],
+    "bbox_area": 0.4117919227972768,
+    "dark_frac": 0.7534169108628755,
+    "border_dark": 0.9998870822041553,
+    "off": 0.0691056910569105,
+    "aspect": 0.0,
+    "bright_border": 0.0,
+    "class": "no_tumor",
+    "plane": "sa",
+    "raw": "C:\\Users\\norie\\OneDrive\\RA1\\brisc2025\\classification_task\\train\\no_tumor\\brisc2025_train_03158_no_sa_t1.jpg",
+    "prep": "C:\\Users\\norie\\OneDrive\\RA1\\brisc2025_preprocessed\\no_tumor_sa\\brisc2025_train_03158_no_sa_t1.png",
+    "name": "brisc2025_train_03158_no_sa_t1.jpg"
+  },
+  {
+    "score": 2.180226516723633,
+    "size": [
+      512,
+      512
+    ],
+    "bbox_area": 0.564422607421875,
+    "dark_frac": 0.5845375061035156,
+    "border_dark": 1.0,
+    "off": 0.0185546875,
+    "aspect": 0.0,
+    "bright_border": 0.0,
+    "class": "pituitary",
+    "plane": "ax",
+    "raw": "C:\\Users\\norie\\OneDrive\\RA1\\brisc2025\\classification_task\\train\\pituitary\\brisc2025_train_03826_pi_ax_t1.jpg",
+    "prep": "C:\\Users\\norie\\OneDrive\\RA1\\brisc2025_preprocessed\\pituitary_ax\\brisc2025_train_03826_pi_ax_t1.png",
+    "name": "brisc2025_train_03826_pi_ax_t1.jpg"
+  },
+  {
+    "score": 1.8861612091064455,
+    "size": [
+      512,
+      512
+    ],
+    "bbox_area": 0.6234626770019531,
+    "dark_frac": 0.3868980407714844,
+    "border_dark": 0.86314453125,
+    "off": 0.0546875,
+    "aspect": 0.0,
+    "bright_border": 0.0,
+    "class": "pituitary",
+    "plane": "co",
+    "raw": "C:\\Users\\norie\\OneDrive\\RA1\\brisc2025\\classification_task\\train\\pituitary\\brisc2025_train_04180_pi_co_t1.jpg",
+    "prep": "C:\\Users\\norie\\OneDrive\\RA1\\brisc2025_preprocessed\\pituitary_co\\brisc2025_train_04180_pi_co_t1.png",
+    "name": "brisc2025_train_04180_pi_co_t1.jpg"
+  },
+  {
+    "score": 1.4725858306884767,
+    "size": [
+      512,
+      512
+    ],
+    "bbox_area": 0.8041305541992188,
+    "dark_frac": 0.3623695373535156,
+    "border_dark": 0.7876953125,
+    "off": 0.0947265625,
+    "aspect": 0.0,
+    "bright_border": 0.0,
+    "class": "pituitary",
+    "plane": "sa",
+    "raw": "C:\\Users\\norie\\OneDrive\\RA1\\brisc2025\\classification_task\\train\\pituitary\\brisc2025_train_04748_pi_sa_t1.jpg",
+    "prep": "C:\\Users\\norie\\OneDrive\\RA1\\brisc2025_preprocessed\\pituitary_sa\\brisc2025_train_04748_pi_sa_t1.png",
+    "name": "brisc2025_train_04748_pi_sa_t1.jpg"
+  }
+]

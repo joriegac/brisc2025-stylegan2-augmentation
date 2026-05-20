@@ -1,0 +1,189 @@
+ArXiv preprint visual registry
+Generated: 2026-05-03
+
+Registry folder: C:\Users\norie\Documents\Codex\2026-05-02\files-mentioned-by-the-user-classify\figures\arxiv_preprint_plot_registry
+Each plot has a matching JSONL whose filename starts with the same code.
+JSONL convention: first row is plot_metadata; subsequent rows are data records or data-availability records.
+
+Important data availability notes:
+- StyleGAN2-ADA loss/sign-accuracy curves are available from stats.jsonl files and are copied into P001-P012 JSONL files.
+- CNN v2 and MobileViTV2 training curves are included when seed JSON files contain training_history; otherwise their JSONL records explicitly mark the trace as not_persisted.
+- UMAP source features/manifests are available, but standalone UMAP coordinates were not found; regenerate coordinates from filter_synthetic_v2.py.
+
+Plot list:
+P001 | StyleGAN2-ADA | StyleGAN2-ADA training curves for glioma_ax | P001_stylegan2_training_glioma_ax.jsonl | status=available
+    Notes: Use kimg on x-axis. Plot G loss and D loss, plus discriminator sign rates for real/fake as training accuracy proxies. Include ADA augmentation probability if useful.
+    Sources: C:\Users\norie\OneDrive\RA1\stylegan3_results\glioma_ax\00011-stylegan2-glioma_ax-gpus1-batch16-gamma2\stats.jsonl; C:\Users\norie\OneDrive\RA1\stylegan3_results\glioma_ax\00011-stylegan2-glioma_ax-gpus1-batch16-gamma2\log.txt
+P002 | StyleGAN2-ADA | StyleGAN2-ADA training curves for glioma_co | P002_stylegan2_training_glioma_co.jsonl | status=available
+    Notes: Use kimg on x-axis. Plot G loss and D loss, plus discriminator sign rates for real/fake as training accuracy proxies. Include ADA augmentation probability if useful.
+    Sources: C:\Users\norie\OneDrive\RA1\stylegan3_results\glioma_co\00001-stylegan2-glioma_co-gpus1-batch16-gamma2\stats.jsonl; C:\Users\norie\OneDrive\RA1\stylegan3_results\glioma_co\00001-stylegan2-glioma_co-gpus1-batch16-gamma2\log.txt
+P003 | StyleGAN2-ADA | StyleGAN2-ADA training curves for glioma_sa | P003_stylegan2_training_glioma_sa.jsonl | status=available
+    Notes: Use kimg on x-axis. Plot G loss and D loss, plus discriminator sign rates for real/fake as training accuracy proxies. Include ADA augmentation probability if useful.
+    Sources: C:\Users\norie\OneDrive\RA1\stylegan3_results\glioma_sa\00001-stylegan2-glioma_sa-gpus1-batch16-gamma2\stats.jsonl; C:\Users\norie\OneDrive\RA1\stylegan3_results\glioma_sa\00001-stylegan2-glioma_sa-gpus1-batch16-gamma2\log.txt
+P004 | StyleGAN2-ADA | StyleGAN2-ADA training curves for meningioma_ax | P004_stylegan2_training_meningioma_ax.jsonl | status=available
+    Notes: Use kimg on x-axis. Plot G loss and D loss, plus discriminator sign rates for real/fake as training accuracy proxies. Include ADA augmentation probability if useful.
+    Sources: C:\Users\norie\OneDrive\RA1\stylegan3_results\meningioma_ax\00001-stylegan2-meningioma_ax-gpus1-batch16-gamma2\stats.jsonl; C:\Users\norie\OneDrive\RA1\stylegan3_results\meningioma_ax\00001-stylegan2-meningioma_ax-gpus1-batch16-gamma2\log.txt
+P005 | StyleGAN2-ADA | StyleGAN2-ADA training curves for meningioma_co | P005_stylegan2_training_meningioma_co.jsonl | status=available
+    Notes: Use kimg on x-axis. Plot G loss and D loss, plus discriminator sign rates for real/fake as training accuracy proxies. Include ADA augmentation probability if useful.
+    Sources: C:\Users\norie\OneDrive\RA1\stylegan3_results\meningioma_co\00000-stylegan2-meningioma_co-gpus1-batch16-gamma2\stats.jsonl; C:\Users\norie\OneDrive\RA1\stylegan3_results\meningioma_co\00000-stylegan2-meningioma_co-gpus1-batch16-gamma2\log.txt
+P006 | StyleGAN2-ADA | StyleGAN2-ADA training curves for meningioma_sa | P006_stylegan2_training_meningioma_sa.jsonl | status=available
+    Notes: Use kimg on x-axis. Plot G loss and D loss, plus discriminator sign rates for real/fake as training accuracy proxies. Include ADA augmentation probability if useful.
+    Sources: C:\Users\norie\OneDrive\RA1\stylegan3_results\meningioma_sa\00000-stylegan2-meningioma_sa-gpus1-batch16-gamma2\stats.jsonl; C:\Users\norie\OneDrive\RA1\stylegan3_results\meningioma_sa\00000-stylegan2-meningioma_sa-gpus1-batch16-gamma2\log.txt
+P007 | StyleGAN2-ADA | StyleGAN2-ADA training curves for no_tumor_ax | P007_stylegan2_training_no_tumor_ax.jsonl | status=available
+    Notes: Use kimg on x-axis. Plot G loss and D loss, plus discriminator sign rates for real/fake as training accuracy proxies. Include ADA augmentation probability if useful.
+    Sources: C:\Users\norie\OneDrive\RA1\stylegan3_results\no_tumor_ax\00000-stylegan2-no_tumor_ax-gpus1-batch16-gamma2\stats.jsonl; C:\Users\norie\OneDrive\RA1\stylegan3_results\no_tumor_ax\00000-stylegan2-no_tumor_ax-gpus1-batch16-gamma2\log.txt
+P008 | StyleGAN2-ADA | StyleGAN2-ADA training curves for no_tumor_co | P008_stylegan2_training_no_tumor_co.jsonl | status=available
+    Notes: Use kimg on x-axis. Plot G loss and D loss, plus discriminator sign rates for real/fake as training accuracy proxies. Include ADA augmentation probability if useful.
+    Sources: C:\Users\norie\OneDrive\RA1\stylegan3_results\no_tumor_co\00000-stylegan2-no_tumor_co-gpus1-batch16-gamma2\stats.jsonl; C:\Users\norie\OneDrive\RA1\stylegan3_results\no_tumor_co\00000-stylegan2-no_tumor_co-gpus1-batch16-gamma2\log.txt
+P009 | StyleGAN2-ADA | StyleGAN2-ADA training curves for no_tumor_sa | P009_stylegan2_training_no_tumor_sa.jsonl | status=available
+    Notes: Use kimg on x-axis. Plot G loss and D loss, plus discriminator sign rates for real/fake as training accuracy proxies. Include ADA augmentation probability if useful.
+    Sources: C:\Users\norie\OneDrive\RA1\stylegan3_results\no_tumor_sa\00001-stylegan2-no_tumor_sa-gpus1-batch16-gamma2\stats.jsonl; C:\Users\norie\OneDrive\RA1\stylegan3_results\no_tumor_sa\00001-stylegan2-no_tumor_sa-gpus1-batch16-gamma2\log.txt
+P010 | StyleGAN2-ADA | StyleGAN2-ADA training curves for pituitary_ax | P010_stylegan2_training_pituitary_ax.jsonl | status=available
+    Notes: Use kimg on x-axis. Plot G loss and D loss, plus discriminator sign rates for real/fake as training accuracy proxies. Include ADA augmentation probability if useful.
+    Sources: C:\Users\norie\OneDrive\RA1\stylegan3_results\pituitary_ax\00000-stylegan2-pituitary_ax-gpus1-batch16-gamma2\stats.jsonl; C:\Users\norie\OneDrive\RA1\stylegan3_results\pituitary_ax\00000-stylegan2-pituitary_ax-gpus1-batch16-gamma2\log.txt
+P011 | StyleGAN2-ADA | StyleGAN2-ADA training curves for pituitary_co | P011_stylegan2_training_pituitary_co.jsonl | status=available
+    Notes: Use kimg on x-axis. Plot G loss and D loss, plus discriminator sign rates for real/fake as training accuracy proxies. Include ADA augmentation probability if useful.
+    Sources: C:\Users\norie\OneDrive\RA1\stylegan3_results\pituitary_co\00000-stylegan2-pituitary_co-gpus1-batch16-gamma2\stats.jsonl; C:\Users\norie\OneDrive\RA1\stylegan3_results\pituitary_co\00000-stylegan2-pituitary_co-gpus1-batch16-gamma2\log.txt
+P012 | StyleGAN2-ADA | StyleGAN2-ADA training curves for pituitary_sa | P012_stylegan2_training_pituitary_sa.jsonl | status=available
+    Notes: Use kimg on x-axis. Plot G loss and D loss, plus discriminator sign rates for real/fake as training accuracy proxies. Include ADA augmentation probability if useful.
+    Sources: C:\Users\norie\OneDrive\RA1\stylegan3_results\pituitary_sa\00001-stylegan2-pituitary_sa-gpus1-batch16-gamma2\stats.jsonl; C:\Users\norie\OneDrive\RA1\stylegan3_results\pituitary_sa\00001-stylegan2-pituitary_sa-gpus1-batch16-gamma2\log.txt
+P013 | StyleGAN2-ADA | StyleGAN2-ADA FID, precision, and recall by generator | P013_stylegan2_fid_precision_recall.jsonl | status=available
+    Notes: Use final or best available snapshot per combo; keep snapshot_kimg available for trajectory/sensitivity panels.
+    Sources: C:\Users\norie\OneDrive\RA1\stylegan3_results\glioma_ax\00011-stylegan2-glioma_ax-gpus1-batch16-gamma2\metric-fid50k_full.jsonl; C:\Users\norie\OneDrive\RA1\stylegan3_results\glioma_ax\00011-stylegan2-glioma_ax-gpus1-batch16-gamma2\metric-pr50k3_full.jsonl; C:\Users\norie\OneDrive\RA1\stylegan3_results\glioma_co\00001-stylegan2-glioma_co-gpus1-batch16-gamma2\metric-fid50k_full.jsonl; +22 more
+P014 | RF/classic classifier v2 | RF/classic classifier v2 aggregate accuracy and F1 comparison | P014_rf_v2_aggregate_metrics.jsonl | status=available
+    Notes: Use seed-level points plus mean and 95% CI; no title for manuscript version.
+    Figures: C:\Users\norie\OneDrive\RA1\outputs_v2\figures\classifier_comparison_v2.pdf; C:\Users\norie\OneDrive\RA1\outputs_v2\figures\classifier_comparison_v2.svg
+    Sources: C:\Users\norie\OneDrive\RA1\outputs_v2\results\stats_v2.json; C:\Users\norie\OneDrive\RA1\outputs_v2\results\baseline_seed0.json; C:\Users\norie\OneDrive\RA1\outputs_v2\results\baseline_seed1.json; +48 more
+P015 | RF/classic classifier v2 | RF/classic classifier v2 tumour confusion matrices | P015_rf_v2_tumour_confusion_matrices.jsonl | status=available
+    Notes: Aggregate over seeds or show representative/best checkpoint.
+    Sources: C:\Users\norie\OneDrive\RA1\outputs_v2\results\baseline_seed0.json; C:\Users\norie\OneDrive\RA1\outputs_v2\results\baseline_seed1.json; C:\Users\norie\OneDrive\RA1\outputs_v2\results\baseline_seed2.json; +47 more
+P016 | RF/classic classifier v2 | RF/classic classifier v2 MRI plane confusion matrices | P016_rf_v2_plane_confusion_matrices.jsonl | status=available
+    Notes: Aggregate over seeds or show representative/best checkpoint.
+    Sources: C:\Users\norie\OneDrive\RA1\outputs_v2\results\baseline_seed0.json; C:\Users\norie\OneDrive\RA1\outputs_v2\results\baseline_seed1.json; C:\Users\norie\OneDrive\RA1\outputs_v2\results\baseline_seed2.json; +47 more
+P017 | RF/classic classifier v2 | RF/classic classifier v2 paired deltas with confidence intervals | P017_rf_v2_paired_deltas.jsonl | status=available
+    Notes: Plot deltas with bootstrap CI and encode Holm-adjusted significance.
+    Sources: C:\Users\norie\OneDrive\RA1\outputs_v2\results\stats_v2.json
+P018 | RF/classic classifier v2 | RF/classic classifier v2 training and validation loss/accuracy curves | P018_rf_v2_training_validation_curves.jsonl | status=not_persisted
+    Notes: RF does not have neural training curves; this slot records that no train/validation loss curve is applicable.
+    Sources: C:\Users\norie\OneDrive\RA1\classify_rf_v2.py; C:\Users\norie\OneDrive\RA1\outputs_v2\results\baseline_seed0.json; C:\Users\norie\OneDrive\RA1\outputs_v2\results\baseline_seed1.json; +48 more
+P019 | CNN v2 | CNN v2 aggregate accuracy and F1 comparison | P019_cnn_v2_aggregate_metrics.jsonl | status=available
+    Notes: Use seed-level points plus mean and 95% CI; no title for manuscript version.
+    Figures: C:\Users\norie\OneDrive\RA1\outputs_v2\figures_cnn_v2\classifier_comparison_cnn_v2.pdf; C:\Users\norie\OneDrive\RA1\outputs_v2\figures_cnn_v2\classifier_comparison_cnn_v2.svg
+    Sources: C:\Users\norie\OneDrive\RA1\outputs_v2\results_cnn_v2\stats_classifier_comparison_cnn_v2.json; C:\Users\norie\OneDrive\RA1\outputs_v2\results_cnn_v2\baseline_seed0.json; C:\Users\norie\OneDrive\RA1\outputs_v2\results_cnn_v2\baseline_seed1.json; +48 more
+P020 | CNN v2 | CNN v2 tumour confusion matrices | P020_cnn_v2_tumour_confusion_matrices.jsonl | status=available
+    Notes: Aggregate over seeds or show representative/best checkpoint.
+    Sources: C:\Users\norie\OneDrive\RA1\outputs_v2\results_cnn_v2\baseline_seed0.json; C:\Users\norie\OneDrive\RA1\outputs_v2\results_cnn_v2\baseline_seed1.json; C:\Users\norie\OneDrive\RA1\outputs_v2\results_cnn_v2\baseline_seed2.json; +47 more
+P021 | CNN v2 | CNN v2 MRI plane confusion matrices | P021_cnn_v2_plane_confusion_matrices.jsonl | status=available
+    Notes: Aggregate over seeds or show representative/best checkpoint.
+    Sources: C:\Users\norie\OneDrive\RA1\outputs_v2\results_cnn_v2\baseline_seed0.json; C:\Users\norie\OneDrive\RA1\outputs_v2\results_cnn_v2\baseline_seed1.json; C:\Users\norie\OneDrive\RA1\outputs_v2\results_cnn_v2\baseline_seed2.json; +47 more
+P022 | CNN v2 | CNN v2 paired deltas with confidence intervals | P022_cnn_v2_paired_deltas.jsonl | status=available
+    Notes: Plot deltas with bootstrap CI and encode Holm-adjusted significance.
+    Sources: C:\Users\norie\OneDrive\RA1\outputs_v2\results_cnn_v2\stats_classifier_comparison_cnn_v2.json
+P023 | CNN v2 | CNN v2 training and validation loss/accuracy curves | P023_cnn_v2_training_validation_curves.jsonl | status=not_persisted
+    Notes: CNN v2 prints tr_loss/vl_loss/vl_tumour/vl_plane but current result JSONs only store final metrics, predictions, and confusion matrices.
+    Sources: C:\Users\norie\OneDrive\RA1\classify_cnn_v2.py; C:\Users\norie\OneDrive\RA1\outputs_v2\results_cnn_v2\baseline_seed0.json; C:\Users\norie\OneDrive\RA1\outputs_v2\results_cnn_v2\baseline_seed1.json; +48 more
+P024 | MobileViTV2 | MobileViTV2 aggregate accuracy and F1 comparison | P024_mobilevitv2_aggregate_metrics.jsonl | status=available
+    Notes: Use seed-level points plus mean and 95% CI; no title for manuscript version.
+    Figures: C:\Users\norie\OneDrive\RA1\outputs_v2\figures_mobilevitv2\classifier_comparison_mobilevitv2.pdf; C:\Users\norie\OneDrive\RA1\outputs_v2\figures_mobilevitv2\classifier_comparison_mobilevitv2.svg
+    Sources: C:\Users\norie\OneDrive\RA1\outputs_v2\results_mobilevitv2\stats_classifier_comparison_mobilevitv2.json; C:\Users\norie\OneDrive\RA1\outputs_v2\results_mobilevitv2\baseline_seed0.json; C:\Users\norie\OneDrive\RA1\outputs_v2\results_mobilevitv2\baseline_seed1.json; +48 more
+P025 | MobileViTV2 | MobileViTV2 tumour confusion matrices | P025_mobilevitv2_tumour_confusion_matrices.jsonl | status=available
+    Notes: Aggregate over seeds or show representative/best checkpoint.
+    Sources: C:\Users\norie\OneDrive\RA1\outputs_v2\results_mobilevitv2\baseline_seed0.json; C:\Users\norie\OneDrive\RA1\outputs_v2\results_mobilevitv2\baseline_seed1.json; C:\Users\norie\OneDrive\RA1\outputs_v2\results_mobilevitv2\baseline_seed2.json; +47 more
+P026 | MobileViTV2 | MobileViTV2 MRI plane confusion matrices | P026_mobilevitv2_plane_confusion_matrices.jsonl | status=available
+    Notes: Aggregate over seeds or show representative/best checkpoint.
+    Sources: C:\Users\norie\OneDrive\RA1\outputs_v2\results_mobilevitv2\baseline_seed0.json; C:\Users\norie\OneDrive\RA1\outputs_v2\results_mobilevitv2\baseline_seed1.json; C:\Users\norie\OneDrive\RA1\outputs_v2\results_mobilevitv2\baseline_seed2.json; +47 more
+P027 | MobileViTV2 | MobileViTV2 paired deltas with confidence intervals | P027_mobilevitv2_paired_deltas.jsonl | status=available
+    Notes: Plot deltas with bootstrap CI and encode Holm-adjusted significance.
+    Sources: C:\Users\norie\OneDrive\RA1\outputs_v2\results_mobilevitv2\stats_classifier_comparison_mobilevitv2.json
+P028 | MobileViTV2 | MobileViTV2 training and validation loss/accuracy curves | P028_mobilevitv2_training_validation_curves.jsonl | status=not_persisted
+    Notes: MobileViTV2 prints per-validation tr_loss/vl_loss/vl_tumour/vl_plane; final JSONs do not store the history trace.
+    Sources: C:\Users\norie\Documents\Codex\2026-05-02\files-mentioned-by-the-user-classify\classify_mobilevitv2.py; C:\Users\norie\OneDrive\RA1\outputs_v2\results_mobilevitv2\baseline_seed0.json; C:\Users\norie\OneDrive\RA1\outputs_v2\results_mobilevitv2\baseline_seed1.json; +48 more
+P029 | Dataset audit | Dataset independence and train-test leakage audit | P029_dataset_independence_audit.jsonl | status=available
+    Notes: Visualize exact hash/pixel overlap, pHash nearest neighbours, and feature nearest-neighbour results.
+    Sources: C:\Users\norie\OneDrive\RA1\outputs_v2\audits\dataset_independence_audit_v2.json; C:\Users\norie\OneDrive\RA1\outputs_v2\audits\train_test_exact_pixel_overlap_clusters_v2.csv; C:\Users\norie\OneDrive\RA1\outputs_v2\audits\train_test_exact_pixel_overlap_v2.csv; +5 more
+P030 | Synthetic filtering | Mahalanobis filtering audit, primary threshold | P030_mahalanobis_filter_main.jsonl | status=available
+    Notes: One row per tumour-plane combo with real/synthetic medians, threshold, rejected count, and kept counts at 1x/2x ratios.
+    Figures: C:\Users\norie\OneDrive\RA1\outputs_v2\figures\mahalanobis_distances_v2.pdf; C:\Users\norie\OneDrive\RA1\outputs_v2\figures\mahalanobis_summary_v2.pdf
+    Sources: C:\Users\norie\OneDrive\RA1\outputs_v2\results\filter_audit_v2.json
+P031 | Synthetic filtering | Mahalanobis filtering sensitivity, p95 | P031_mahalanobis_filter_p95.jsonl | status=available
+    Notes: One row per tumour-plane combo with real/synthetic medians, threshold, rejected count, and kept counts at 1x/2x ratios.
+    Figures: C:\Users\norie\OneDrive\RA1\outputs_v2\figures\mahalanobis_distances_v2_p95.pdf; C:\Users\norie\OneDrive\RA1\outputs_v2\figures\mahalanobis_summary_v2_p95.pdf
+    Sources: C:\Users\norie\OneDrive\RA1\outputs_v2\results\filter_audit_v2_p95.json
+P032 | Synthetic filtering | Mahalanobis filtering sensitivity, p97.5 | P032_mahalanobis_filter_p975.jsonl | status=available
+    Notes: One row per tumour-plane combo with real/synthetic medians, threshold, rejected count, and kept counts at 1x/2x ratios.
+    Figures: C:\Users\norie\OneDrive\RA1\outputs_v2\figures\mahalanobis_distances_v2_p97.5.pdf; C:\Users\norie\OneDrive\RA1\outputs_v2\figures\mahalanobis_summary_v2_p97.5.pdf
+    Sources: C:\Users\norie\OneDrive\RA1\outputs_v2\results\filter_audit_v2_p97.5.json
+P033 | Synthetic filtering | Mahalanobis filtering sensitivity, p99 | P033_mahalanobis_filter_p99.jsonl | status=available
+    Notes: One row per tumour-plane combo with real/synthetic medians, threshold, rejected count, and kept counts at 1x/2x ratios.
+    Figures: C:\Users\norie\OneDrive\RA1\outputs_v2\figures\mahalanobis_distances_v2_p99.pdf; C:\Users\norie\OneDrive\RA1\outputs_v2\figures\mahalanobis_summary_v2_p99.pdf
+    Sources: C:\Users\norie\OneDrive\RA1\outputs_v2\results\filter_audit_v2_p99.json
+P034 | Synthetic filtering | UMAP source and class embeddings, primary filter | P034_umap_main.jsonl | status=source_features_available_coordinates_not_persisted
+    Notes: UMAP coordinates were not found as standalone files; regenerate from feature NPYs and manifest CSVs using filter_synthetic_v2.py.
+    Figures: C:\Users\norie\OneDrive\RA1\outputs_v2\figures\umap_source_v2.pdf; C:\Users\norie\OneDrive\RA1\outputs_v2\figures\umap_class_v2.pdf
+    Sources: C:\Users\norie\OneDrive\RA1\outputs_v2\features; C:\Users\norie\OneDrive\RA1\outputs_v2\manifests; C:\Users\norie\OneDrive\RA1\filter_synthetic_v2.py
+P035 | Synthetic filtering | UMAP source and class embeddings, p95 sensitivity | P035_umap_p95.jsonl | status=source_features_available_coordinates_not_persisted
+    Notes: UMAP coordinates were not found as standalone files; regenerate from feature NPYs and manifest CSVs using filter_synthetic_v2.py.
+    Figures: C:\Users\norie\OneDrive\RA1\outputs_v2\figures\umap_source_v2_p95.pdf; C:\Users\norie\OneDrive\RA1\outputs_v2\figures\umap_class_v2_p95.pdf
+    Sources: C:\Users\norie\OneDrive\RA1\outputs_v2\features; C:\Users\norie\OneDrive\RA1\outputs_v2\manifests; C:\Users\norie\OneDrive\RA1\filter_synthetic_v2.py
+P036 | Synthetic filtering | UMAP source and class embeddings, p97.5 sensitivity | P036_umap_p975.jsonl | status=source_features_available_coordinates_not_persisted
+    Notes: UMAP coordinates were not found as standalone files; regenerate from feature NPYs and manifest CSVs using filter_synthetic_v2.py.
+    Figures: C:\Users\norie\OneDrive\RA1\outputs_v2\figures\umap_source_v2_p97.5.pdf; C:\Users\norie\OneDrive\RA1\outputs_v2\figures\umap_class_v2_p97.5.pdf
+    Sources: C:\Users\norie\OneDrive\RA1\outputs_v2\features; C:\Users\norie\OneDrive\RA1\outputs_v2\manifests; C:\Users\norie\OneDrive\RA1\filter_synthetic_v2.py
+P037 | Synthetic filtering | UMAP source and class embeddings, p99 sensitivity | P037_umap_p99.jsonl | status=source_features_available_coordinates_not_persisted
+    Notes: UMAP coordinates were not found as standalone files; regenerate from feature NPYs and manifest CSVs using filter_synthetic_v2.py.
+    Figures: C:\Users\norie\OneDrive\RA1\outputs_v2\figures\umap_source_v2_p99.pdf; C:\Users\norie\OneDrive\RA1\outputs_v2\figures\umap_class_v2_p99.pdf
+    Sources: C:\Users\norie\OneDrive\RA1\outputs_v2\features; C:\Users\norie\OneDrive\RA1\outputs_v2\manifests; C:\Users\norie\OneDrive\RA1\filter_synthetic_v2.py
+P038 | Preprocessing | Raw-to-preprocessed training image comparison | P038_preprocessing_train.jsonl | status=available
+    Notes: Use only if space allows; otherwise place in supplement.
+    Figures: C:\Users\norie\OneDrive\RA1\figures\preprocessing_train\preprocessing_comparison.pdf; C:\Users\norie\OneDrive\RA1\figures\preprocessing_train\preprocessing_comparison.png
+    Sources: C:\Users\norie\OneDrive\RA1\preprocess_v2.py
+P039 | Preprocessing | Raw-to-preprocessed test image comparison | P039_preprocessing_test.jsonl | status=available
+    Notes: Use only if space allows; otherwise place in supplement.
+    Figures: C:\Users\norie\OneDrive\RA1\figures\preprocessing_test\preprocessing_comparison.pdf; C:\Users\norie\OneDrive\RA1\figures\preprocessing_test\preprocessing_comparison.png
+    Sources: C:\Users\norie\OneDrive\RA1\preprocess_v2.py
+P040 | StyleGAN2-ADA | StyleGAN2-ADA generated image snapshots | P040_stylegan2_sample_snapshots.jsonl | status=available
+    Notes: Select final fakes image for each chosen combo, optionally compare init/early/final snapshots.
+    Sources: C:\Users\norie\OneDrive\RA1\stylegan3_results
+P041 | Synthetic image audit | Synthetic plausibility panels by tumour-plane combo | P041_plausibility_panels.jsonl | status=planned_source_available
+    Notes: Generator script and source manifests/features exist; rendered panels not found yet.
+    Figures: C:\Users\norie\OneDrive\RA1\outputs_v2\audits\plausibility_panels_v2
+    Sources: C:\Users\norie\OneDrive\RA1\make_plausibility_panels_v2.py; C:\Users\norie\OneDrive\RA1\outputs_v2\manifests
+P042 | Synthetic image audit | Synthetic artifact detector audit | P042_synthetic_artifact_audit.jsonl | status=planned_source_available
+    Notes: Generator script exists; rendered audit outputs not found yet.
+    Figures: C:\Users\norie\OneDrive\RA1\outputs_v2\audits\synthetic_artifacts_v2
+    Sources: C:\Users\norie\OneDrive\RA1\audit_synthetic_artifacts_v2.py; C:\Users\norie\OneDrive\RA1\outputs_v2\manifests
+P043 | OpenAI VLM audit | OpenAI VLM audit overview metrics | P043_openai_vlm_overview.jsonl | status=available
+    Notes: Plot source accuracy, gated source accuracy, tumour accuracy, plane accuracy, gate pass, synthetic recall, and real specificity.
+    Figures: C:\Users\norie\Documents\Codex\2026-05-02\files-mentioned-by-the-user-classify\vlm_realism_train_augmented_r2_balanced6000_gpt54mini\analysis_openai_vlm\figures\vlm_realism_overview.pdf; C:\Users\norie\Documents\Codex\2026-05-02\files-mentioned-by-the-user-classify\vlm_realism_train_augmented_r2_balanced6000_gpt54mini\analysis_openai_vlm\figures\vlm_realism_overview.svg
+    Sources: C:\Users\norie\Documents\Codex\2026-05-02\files-mentioned-by-the-user-classify\vlm_realism_train_augmented_r2_balanced6000_gpt54mini\analysis_openai_vlm\openai_vlm_audit_summary.json; C:\Users\norie\Documents\Codex\2026-05-02\files-mentioned-by-the-user-classify\vlm_realism_train_augmented_r2_balanced6000_gpt54mini\analysis_openai_vlm\responses_openai_joined.csv
+P044 | OpenAI VLM audit | OpenAI VLM source confusion matrix | P044_openai_vlm_source_confusion.jsonl | status=available
+    Notes: Show real-vs-synthetic judgement; the asymmetry is the finding.
+    Figures: C:\Users\norie\Documents\Codex\2026-05-02\files-mentioned-by-the-user-classify\vlm_realism_train_augmented_r2_balanced6000_gpt54mini\analysis_openai_vlm\figures\vlm_realism_source_confusion.pdf; C:\Users\norie\Documents\Codex\2026-05-02\files-mentioned-by-the-user-classify\vlm_realism_train_augmented_r2_balanced6000_gpt54mini\analysis_openai_vlm\figures\vlm_realism_source_confusion.svg
+    Sources: C:\Users\norie\Documents\Codex\2026-05-02\files-mentioned-by-the-user-classify\vlm_realism_train_augmented_r2_balanced6000_gpt54mini\analysis_openai_vlm\openai_vlm_audit_summary.json; C:\Users\norie\Documents\Codex\2026-05-02\files-mentioned-by-the-user-classify\vlm_realism_train_augmented_r2_balanced6000_gpt54mini\analysis_openai_vlm\responses_openai_joined.csv
+P045 | OpenAI VLM audit | OpenAI VLM source accuracy stratified by class, plane, and source | P045_openai_vlm_source_accuracy_stratified.jsonl | status=available
+    Figures: C:\Users\norie\Documents\Codex\2026-05-02\files-mentioned-by-the-user-classify\vlm_realism_train_augmented_r2_balanced6000_gpt54mini\analysis_openai_vlm\figures\vlm_realism_source_accuracy_stratified.pdf; C:\Users\norie\Documents\Codex\2026-05-02\files-mentioned-by-the-user-classify\vlm_realism_train_augmented_r2_balanced6000_gpt54mini\analysis_openai_vlm\figures\vlm_realism_source_accuracy_stratified.svg
+    Sources: C:\Users\norie\Documents\Codex\2026-05-02\files-mentioned-by-the-user-classify\vlm_realism_train_augmented_r2_balanced6000_gpt54mini\analysis_openai_vlm\responses_openai_joined.csv
+P046 | OpenAI VLM audit | OpenAI VLM gate-pass rate stratified by class, plane, and source | P046_openai_vlm_gate_pass_stratified.jsonl | status=available
+    Figures: C:\Users\norie\Documents\Codex\2026-05-02\files-mentioned-by-the-user-classify\vlm_realism_train_augmented_r2_balanced6000_gpt54mini\analysis_openai_vlm\figures\vlm_realism_gate_pass_stratified.pdf; C:\Users\norie\Documents\Codex\2026-05-02\files-mentioned-by-the-user-classify\vlm_realism_train_augmented_r2_balanced6000_gpt54mini\analysis_openai_vlm\figures\vlm_realism_gate_pass_stratified.svg
+    Sources: C:\Users\norie\Documents\Codex\2026-05-02\files-mentioned-by-the-user-classify\vlm_realism_train_augmented_r2_balanced6000_gpt54mini\analysis_openai_vlm\responses_openai_joined.csv
+P047 | OpenAI VLM audit | OpenAI VLM artifact categories and confidence distributions | P047_openai_vlm_artifacts_confidence.jsonl | status=available
+    Figures: C:\Users\norie\Documents\Codex\2026-05-02\files-mentioned-by-the-user-classify\vlm_realism_train_augmented_r2_balanced6000_gpt54mini\analysis_openai_vlm\figures\vlm_realism_artifacts_confidence.pdf; C:\Users\norie\Documents\Codex\2026-05-02\files-mentioned-by-the-user-classify\vlm_realism_train_augmented_r2_balanced6000_gpt54mini\analysis_openai_vlm\figures\vlm_realism_artifacts_confidence.svg
+    Sources: C:\Users\norie\Documents\Codex\2026-05-02\files-mentioned-by-the-user-classify\vlm_realism_train_augmented_r2_balanced6000_gpt54mini\analysis_openai_vlm\responses_openai_joined.csv
+P048 | OpenAI VLM audit | OpenAI VLM tumour-class confusion matrix | P048_openai_vlm_tumour_confusion.jsonl | status=available
+    Sources: C:\Users\norie\Documents\Codex\2026-05-02\files-mentioned-by-the-user-classify\vlm_realism_train_augmented_r2_balanced6000_gpt54mini\analysis_openai_vlm\responses_openai_joined.csv
+P049 | OpenAI VLM audit | OpenAI VLM MRI-plane confusion matrix | P049_openai_vlm_plane_confusion.jsonl | status=available
+    Sources: C:\Users\norie\Documents\Codex\2026-05-02\files-mentioned-by-the-user-classify\vlm_realism_train_augmented_r2_balanced6000_gpt54mini\analysis_openai_vlm\responses_openai_joined.csv
+P050 | OpenAI VLM audit | OpenAI VLM parse and completion diagnostics | P050_openai_vlm_parse_diagnostics.jsonl | status=available
+    Sources: C:\Users\norie\Documents\Codex\2026-05-02\files-mentioned-by-the-user-classify\vlm_realism_train_augmented_r2_balanced6000_gpt54mini\analysis_openai_vlm\openai_vlm_audit_summary.json; C:\Users\norie\Documents\Codex\2026-05-02\files-mentioned-by-the-user-classify\vlm_realism_train_augmented_r2_balanced6000_gpt54mini\analysis_openai_vlm\parse_errors.jsonl
+P051 | Dataset composition | Dataset class-plane-source composition | P051_dataset_manifest_counts.jsonl | status=available
+    Notes: Show class-plane counts for train_real, test, augmented, and filtered manifests.
+    Sources: C:\Users\norie\OneDrive\RA1\outputs_v2\manifests\test.csv; C:\Users\norie\OneDrive\RA1\outputs_v2\manifests\train_augmented_r1.csv; C:\Users\norie\OneDrive\RA1\outputs_v2\manifests\train_augmented_r1_filtered.csv; +10 more
+P052 | Synthetic filtering | Synthetic filtering retention by tumour-plane combo and augmentation ratio | P052_synthetic_filter_retention_by_ratio.jsonl | status=available
+    Notes: This can be derived from the same filter audit files but is useful as a standalone figure.
+    Sources: C:\Users\norie\OneDrive\RA1\outputs_v2\results\filter_audit_v2.json; C:\Users\norie\OneDrive\RA1\outputs_v2\results\filter_audit_v2_p95.json; C:\Users\norie\OneDrive\RA1\outputs_v2\results\filter_audit_v2_p97.5.json; +1 more
+
+Recommended figure-script behaviour:
+- Read plot_registry_index.jsonl first, then load each code-specific JSONL.
+- Skip rows with record_type=plot_metadata when building data frames, but use them for captions and source paths.
+- Export editable PDF and SVG; remove titles; use captions for narrative text.
+- Use one consistent academic palette across classifier, filter, and VLM plots.

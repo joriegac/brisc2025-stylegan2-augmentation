@@ -1,0 +1,6 @@
+experiment	metric	x	lower_whisker	lower_quartile	median	upper_quartile	upper_whisker	mean	halfci	n
+baseline	accuracy	0.780000	0.801	0.805	0.8055	0.8105	0.813	0.8069	0.0027898	10
+augmented_r1	accuracy	1.780000	0.798	0.801	0.803	0.80575	0.807	0.803	0.00215912742	10
+augmented_r2	accuracy	2.780000	0.797	0.80025	0.803	0.80675	0.808	0.8032	0.00265082209	10
+filtered_r1	accuracy	3.780000	0.791	0.793	0.7945	0.8	0.801	0.7959	0.00296754323	10
+filtered_r2	accuracy	4.780000	0.799	0.8005	0.8035	0.80475	0.807	0.8029	0.0020358	10

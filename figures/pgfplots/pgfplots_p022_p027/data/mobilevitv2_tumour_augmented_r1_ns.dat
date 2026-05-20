@@ -1,0 +1,4 @@
+model	panel	comparison	metric	y	delta_pp	err_minus	err_plus	ci_low_pp	ci_high_pp	p_holm	p_raw	significant
+mobilevitv2	tumour	augmented_r1	per_tumour_f1:glioma	3.76	-0.173339892	0.625866782	0.614283349	-0.799206673	0.440943458	1	0.603279344	0
+mobilevitv2	tumour	augmented_r1	per_tumour_f1:pituitary	0.76	-0.90425461	0.618517011	0.532147099	-1.52277162	-0.372107511	0.0647870426	0.00179964007	0
+mobilevitv2	tumour	augmented_r1	tumour_weighted_f1	4.76	0.824279709	0.50638402	0.511319682	0.317895688	1.33559939	0.0647870426	0.00179964007	0

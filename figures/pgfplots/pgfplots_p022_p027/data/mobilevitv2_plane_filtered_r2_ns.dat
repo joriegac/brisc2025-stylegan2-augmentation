@@ -1,0 +1,7 @@
+model	panel	comparison	metric	y	delta_pp	err_minus	err_plus	ci_low_pp	ci_high_pp	p_holm	p_raw	significant
+mobilevitv2	plane	filtered_r2	per_plane_f1:ax	3.24	0.0745914344	0.110696596	0.157315067	-0.0361051618	0.231906502	1	0.5094981	0
+mobilevitv2	plane	filtered_r2	per_plane_f1:co	2.24	0.315299485	0.298661635	0.34934285	0.0166378507	0.664642335	1	0.0451909618	0
+mobilevitv2	plane	filtered_r2	per_plane_f1:sa	1.24	0.218489011	0.234135679	0.283296999	-0.0156466675	0.50178601	1	0.124175165	0
+mobilevitv2	plane	filtered_r2	plane_accuracy	6.24	0.19	0.18	0.2	0.01	0.39	1	0.0651869626	0
+mobilevitv2	plane	filtered_r2	plane_macro_f1	5.24	0.20279331	0.191853068	0.218553589	0.0109402421	0.421346899	1	0.0423915217	0
+mobilevitv2	plane	filtered_r2	plane_weighted_f1	4.24	0.19074497	0.180697262	0.21265862	0.0100477086	0.403403591	1	0.0395920816	0

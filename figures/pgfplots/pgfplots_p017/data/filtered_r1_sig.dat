@@ -1,0 +1,2 @@
+comparison	metric	y	delta_pp	err_minus	err_plus	ci_low_pp	ci_high_pp	p_value_holm	significant
+filtered_r1	f1[pituitary]	1.08	-1.97594188	1.06842267	0.99197969	-3.04436455	-0.983962186	0.00559888022	1

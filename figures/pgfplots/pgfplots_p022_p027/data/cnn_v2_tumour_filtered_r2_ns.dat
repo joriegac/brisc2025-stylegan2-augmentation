@@ -1,0 +1,7 @@
+model	panel	comparison	metric	y	delta_pp	err_minus	err_plus	ci_low_pp	ci_high_pp	p_holm	p_raw	significant
+cnn_v2	tumour	filtered_r2	per_tumour_f1:glioma	4.24	-1.08454509	0.943536833	0.883867517	-2.02808193	-0.200677577	0.734253149	0.0203959208	0
+cnn_v2	tumour	filtered_r2	per_tumour_f1:meningioma	3.24	1.03510973	1.21722138	1.2736593	-0.182111651	2.30876903	1	0.099980004	0
+cnn_v2	tumour	filtered_r2	per_tumour_f1:pituitary	1.24	0.247021551	0.413999029	0.436799378	-0.166977478	0.683820928	1	0.25794841	0
+cnn_v2	tumour	filtered_r2	tumour_accuracy	7.24	0.63	0.67	0.7	-0.04	1.33	1	0.0779844031	0
+cnn_v2	tumour	filtered_r2	tumour_macro_f1	6.24	0.931380446	0.729781825	0.772055664	0.20159862	1.70343611	0.631673665	0.0161967606	0
+cnn_v2	tumour	filtered_r2	tumour_weighted_f1	5.24	0.609286573	0.690159976	0.665518941	-0.0808734039	1.27480551	1	0.0877824435	0

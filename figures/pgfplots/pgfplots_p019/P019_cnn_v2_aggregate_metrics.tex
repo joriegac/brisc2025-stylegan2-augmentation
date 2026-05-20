@@ -1,0 +1,337 @@
+﻿\documentclass[tikz,border=2pt]{standalone}
+\input{C:/Users/norie/OneDrive/RA1/figures/pgfplots/pgfplots_font_setup.tex}
+\usepackage{pgfplots}
+\usepgfplotslibrary{groupplots}
+\pgfplotsset{compat=1.18}
+
+\definecolor{viridisAccuracy}{HTML}{440154}
+\definecolor{viridisMacro}{HTML}{2D708E}
+\definecolor{viridisWeighted}{HTML}{35B779}
+
+\pgfplotsset{
+  every axis/.append style={
+    width=104mm,
+    height=39mm,
+    scale only axis,
+    axis line style={black, line width=0.45pt},
+    tick style={black, line width=0.45pt},
+    tick label style={font=\scriptsize\sffamily, /pgf/number format/assume math mode=true},
+    label style={font=\scriptsize\sffamily},
+    grid=both,
+    major grid style={black!10, line width=0.25pt},
+    minor grid style={black!5, line width=0.2pt},
+    minor tick num=1,
+    legend style={
+      font=\pgfplotlegendfont,
+      draw=none,
+      fill=white,
+      fill opacity=0.86,
+      text opacity=1,
+      cells={anchor=west},
+      /tikz/every even column/.append style={column sep=3pt}
+    },
+  },
+}
+
+\begin{document}
+\begin{tikzpicture}
+\begin{groupplot}[
+  group style={
+    group size=1 by 2,
+    vertical sep=7mm,
+  },
+]
+\nextgroupplot[
+  xmin=0.5,
+  xmax=5.5,
+  ymin=0.920,
+  ymax=0.970,
+  ylabel={Tumour score},
+  xtick={1,2,3,4,5},
+  xticklabels={,,,,},
+  x tick label style={font=\scriptsize\sffamily, /pgf/number format/assume math mode=true, /pgf/number format/assume math mode=true},
+  xtick style={draw=none},
+  after end axis/.code={
+    \foreach \xpos in {1.5, 2.5, 3.5, 4.5}{
+      \draw[black, line width=0.45pt]
+        (axis cs:\xpos, 0.920) --
+        ([yshift=-2pt]axis cs:\xpos, 0.920);
+    }
+  },
+  ytick={0.92,0.93,0.94,0.95,0.96,0.97},
+  scaled y ticks=false,
+  yticklabel style={/pgf/number format/fixed, /pgf/number format/precision=2},
+  legend columns=3,
+  legend style={
+    at={(0.985,0.985)},
+    anchor=north east,
+    row sep=0pt
+  },
+]
+\draw[draw=black, fill=viridisAccuracy, fill opacity=0.78, line width=0.58pt] (axis cs:0.690000,0.940000) rectangle (axis cs:0.870000,0.949750);
+\draw[draw=black, line width=0.72pt] (axis cs:0.690000,0.941500) -- (axis cs:0.870000,0.941500);
+\draw[draw=black, line width=0.48pt] (axis cs:0.780000,0.935000) -- (axis cs:0.780000,0.940000);
+\draw[draw=black, line width=0.48pt] (axis cs:0.780000,0.949750) -- (axis cs:0.780000,0.955000);
+\draw[draw=black, line width=0.48pt] (axis cs:0.690000,0.935000) -- (axis cs:0.870000,0.935000);
+\draw[draw=black, line width=0.48pt] (axis cs:0.690000,0.955000) -- (axis cs:0.870000,0.955000);
+\draw[draw=black, fill=viridisAccuracy, fill opacity=0.78, line width=0.58pt] (axis cs:1.690000,0.944750) rectangle (axis cs:1.870000,0.955500);
+\draw[draw=black, line width=0.72pt] (axis cs:1.690000,0.950500) -- (axis cs:1.870000,0.950500);
+\draw[draw=black, line width=0.48pt] (axis cs:1.780000,0.936000) -- (axis cs:1.780000,0.944750);
+\draw[draw=black, line width=0.48pt] (axis cs:1.780000,0.955500) -- (axis cs:1.780000,0.957000);
+\draw[draw=black, line width=0.48pt] (axis cs:1.690000,0.936000) -- (axis cs:1.870000,0.936000);
+\draw[draw=black, line width=0.48pt] (axis cs:1.690000,0.957000) -- (axis cs:1.870000,0.957000);
+\draw[draw=black, fill=viridisAccuracy, fill opacity=0.78, line width=0.58pt] (axis cs:2.690000,0.947250) rectangle (axis cs:2.870000,0.953250);
+\draw[draw=black, line width=0.72pt] (axis cs:2.690000,0.950500) -- (axis cs:2.870000,0.950500);
+\draw[draw=black, line width=0.48pt] (axis cs:2.780000,0.945000) -- (axis cs:2.780000,0.947250);
+\draw[draw=black, line width=0.48pt] (axis cs:2.780000,0.953250) -- (axis cs:2.780000,0.960000);
+\draw[draw=black, line width=0.48pt] (axis cs:2.690000,0.945000) -- (axis cs:2.870000,0.945000);
+\draw[draw=black, line width=0.48pt] (axis cs:2.690000,0.960000) -- (axis cs:2.870000,0.960000);
+\draw[draw=black, fill=viridisAccuracy, fill opacity=0.78, line width=0.58pt] (axis cs:3.690000,0.945750) rectangle (axis cs:3.870000,0.955250);
+\draw[draw=black, line width=0.72pt] (axis cs:3.690000,0.950500) -- (axis cs:3.870000,0.950500);
+\draw[draw=black, line width=0.48pt] (axis cs:3.780000,0.936000) -- (axis cs:3.780000,0.945750);
+\draw[draw=black, line width=0.48pt] (axis cs:3.780000,0.955250) -- (axis cs:3.780000,0.959000);
+\draw[draw=black, line width=0.48pt] (axis cs:3.690000,0.936000) -- (axis cs:3.870000,0.936000);
+\draw[draw=black, line width=0.48pt] (axis cs:3.690000,0.959000) -- (axis cs:3.870000,0.959000);
+\draw[draw=black, fill=viridisAccuracy, fill opacity=0.78, line width=0.58pt] (axis cs:4.690000,0.945500) rectangle (axis cs:4.870000,0.953500);
+\draw[draw=black, line width=0.72pt] (axis cs:4.690000,0.949500) -- (axis cs:4.870000,0.949500);
+\draw[draw=black, line width=0.48pt] (axis cs:4.780000,0.941000) -- (axis cs:4.780000,0.945500);
+\draw[draw=black, line width=0.48pt] (axis cs:4.780000,0.953500) -- (axis cs:4.780000,0.960000);
+\draw[draw=black, line width=0.48pt] (axis cs:4.690000,0.941000) -- (axis cs:4.870000,0.941000);
+\draw[draw=black, line width=0.48pt] (axis cs:4.690000,0.960000) -- (axis cs:4.870000,0.960000);
+\draw[draw=black, fill=viridisMacro, fill opacity=0.78, line width=0.58pt] (axis cs:0.910000,0.935201) rectangle (axis cs:1.090000,0.946311);
+\draw[draw=black, line width=0.72pt] (axis cs:0.910000,0.938019) -- (axis cs:1.090000,0.938019);
+\draw[draw=black, line width=0.48pt] (axis cs:1.000000,0.929039) -- (axis cs:1.000000,0.935201);
+\draw[draw=black, line width=0.48pt] (axis cs:1.000000,0.946311) -- (axis cs:1.000000,0.951918);
+\draw[draw=black, line width=0.48pt] (axis cs:0.910000,0.929039) -- (axis cs:1.090000,0.929039);
+\draw[draw=black, line width=0.48pt] (axis cs:0.910000,0.951918) -- (axis cs:1.090000,0.951918);
+\draw[draw=black, fill=viridisMacro, fill opacity=0.78, line width=0.58pt] (axis cs:1.910000,0.943234) rectangle (axis cs:2.090000,0.954867);
+\draw[draw=black, line width=0.72pt] (axis cs:1.910000,0.950805) -- (axis cs:2.090000,0.950805);
+\draw[draw=black, line width=0.48pt] (axis cs:2.000000,0.931565) -- (axis cs:2.000000,0.943234);
+\draw[draw=black, line width=0.48pt] (axis cs:2.000000,0.954867) -- (axis cs:2.000000,0.956369);
+\draw[draw=black, line width=0.48pt] (axis cs:1.910000,0.931565) -- (axis cs:2.090000,0.931565);
+\draw[draw=black, line width=0.48pt] (axis cs:1.910000,0.956369) -- (axis cs:2.090000,0.956369);
+\draw[draw=black, fill=viridisMacro, fill opacity=0.78, line width=0.58pt] (axis cs:2.910000,0.946644) rectangle (axis cs:3.090000,0.954322);
+\draw[draw=black, line width=0.72pt] (axis cs:2.910000,0.949195) -- (axis cs:3.090000,0.949195);
+\draw[draw=black, line width=0.48pt] (axis cs:3.000000,0.944142) -- (axis cs:3.000000,0.946644);
+\draw[draw=black, line width=0.48pt] (axis cs:3.000000,0.954322) -- (axis cs:3.000000,0.960329);
+\draw[draw=black, line width=0.48pt] (axis cs:2.910000,0.944142) -- (axis cs:3.090000,0.944142);
+\draw[draw=black, line width=0.48pt] (axis cs:2.910000,0.960329) -- (axis cs:3.090000,0.960329);
+\draw[draw=black, fill=viridisMacro, fill opacity=0.78, line width=0.58pt] (axis cs:3.910000,0.943576) rectangle (axis cs:4.090000,0.952965);
+\draw[draw=black, line width=0.72pt] (axis cs:3.910000,0.948273) -- (axis cs:4.090000,0.948273);
+\draw[draw=black, line width=0.48pt] (axis cs:4.000000,0.933115) -- (axis cs:4.000000,0.943576);
+\draw[draw=black, line width=0.48pt] (axis cs:4.000000,0.952965) -- (axis cs:4.000000,0.957661);
+\draw[draw=black, line width=0.48pt] (axis cs:3.910000,0.933115) -- (axis cs:4.090000,0.933115);
+\draw[draw=black, line width=0.48pt] (axis cs:3.910000,0.957661) -- (axis cs:4.090000,0.957661);
+\draw[draw=black, fill=viridisMacro, fill opacity=0.78, line width=0.58pt] (axis cs:4.910000,0.946214) rectangle (axis cs:5.090000,0.952917);
+\draw[draw=black, line width=0.72pt] (axis cs:4.910000,0.948452) -- (axis cs:5.090000,0.948452);
+\draw[draw=black, line width=0.48pt] (axis cs:5.000000,0.938664) -- (axis cs:5.000000,0.946214);
+\draw[draw=black, line width=0.48pt] (axis cs:5.000000,0.952917) -- (axis cs:5.000000,0.959092);
+\draw[draw=black, line width=0.48pt] (axis cs:4.910000,0.938664) -- (axis cs:5.090000,0.938664);
+\draw[draw=black, line width=0.48pt] (axis cs:4.910000,0.959092) -- (axis cs:5.090000,0.959092);
+\draw[draw=black, fill=viridisWeighted, fill opacity=0.78, line width=0.58pt] (axis cs:1.130000,0.939688) rectangle (axis cs:1.310000,0.949660);
+\draw[draw=black, line width=0.72pt] (axis cs:1.130000,0.941519) -- (axis cs:1.310000,0.941519);
+\draw[draw=black, line width=0.48pt] (axis cs:1.220000,0.934830) -- (axis cs:1.220000,0.939688);
+\draw[draw=black, line width=0.48pt] (axis cs:1.220000,0.949660) -- (axis cs:1.220000,0.954862);
+\draw[draw=black, line width=0.48pt] (axis cs:1.130000,0.934830) -- (axis cs:1.310000,0.934830);
+\draw[draw=black, line width=0.48pt] (axis cs:1.130000,0.954862) -- (axis cs:1.310000,0.954862);
+\draw[draw=black, fill=viridisWeighted, fill opacity=0.78, line width=0.58pt] (axis cs:2.130000,0.944676) rectangle (axis cs:2.310000,0.955141);
+\draw[draw=black, line width=0.72pt] (axis cs:2.130000,0.950140) -- (axis cs:2.310000,0.950140);
+\draw[draw=black, line width=0.48pt] (axis cs:2.220000,0.935168) -- (axis cs:2.220000,0.944676);
+\draw[draw=black, line width=0.48pt] (axis cs:2.220000,0.955141) -- (axis cs:2.220000,0.956539);
+\draw[draw=black, line width=0.48pt] (axis cs:2.130000,0.935168) -- (axis cs:2.310000,0.935168);
+\draw[draw=black, line width=0.48pt] (axis cs:2.130000,0.956539) -- (axis cs:2.310000,0.956539);
+\draw[draw=black, fill=viridisWeighted, fill opacity=0.78, line width=0.58pt] (axis cs:3.130000,0.946722) rectangle (axis cs:3.310000,0.953095);
+\draw[draw=black, line width=0.72pt] (axis cs:3.130000,0.949925) -- (axis cs:3.310000,0.949925);
+\draw[draw=black, line width=0.48pt] (axis cs:3.220000,0.944368) -- (axis cs:3.220000,0.946722);
+\draw[draw=black, line width=0.48pt] (axis cs:3.220000,0.953095) -- (axis cs:3.220000,0.959871);
+\draw[draw=black, line width=0.48pt] (axis cs:3.130000,0.944368) -- (axis cs:3.310000,0.944368);
+\draw[draw=black, line width=0.48pt] (axis cs:3.130000,0.959871) -- (axis cs:3.310000,0.959871);
+\draw[draw=black, fill=viridisWeighted, fill opacity=0.78, line width=0.58pt] (axis cs:4.130000,0.945533) rectangle (axis cs:4.310000,0.955218);
+\draw[draw=black, line width=0.72pt] (axis cs:4.130000,0.950238) -- (axis cs:4.310000,0.950238);
+\draw[draw=black, line width=0.48pt] (axis cs:4.220000,0.935544) -- (axis cs:4.220000,0.945533);
+\draw[draw=black, line width=0.48pt] (axis cs:4.220000,0.955218) -- (axis cs:4.220000,0.958735);
+\draw[draw=black, line width=0.48pt] (axis cs:4.130000,0.935544) -- (axis cs:4.310000,0.935544);
+\draw[draw=black, line width=0.48pt] (axis cs:4.130000,0.958735) -- (axis cs:4.310000,0.958735);
+\draw[draw=black, fill=viridisWeighted, fill opacity=0.78, line width=0.58pt] (axis cs:5.130000,0.944705) rectangle (axis cs:5.310000,0.952941);
+\draw[draw=black, line width=0.72pt] (axis cs:5.130000,0.949250) -- (axis cs:5.310000,0.949250);
+\draw[draw=black, line width=0.48pt] (axis cs:5.220000,0.940557) -- (axis cs:5.220000,0.944705);
+\draw[draw=black, line width=0.48pt] (axis cs:5.220000,0.952941) -- (axis cs:5.220000,0.959741);
+\draw[draw=black, line width=0.48pt] (axis cs:5.130000,0.940557) -- (axis cs:5.310000,0.940557);
+\draw[draw=black, line width=0.48pt] (axis cs:5.130000,0.959741) -- (axis cs:5.310000,0.959741);
+\addplot+[
+  only marks,
+  mark=*,
+  mark size=1.05pt,
+  color=black,
+  fill=viridisAccuracy!48!white,
+  mark options={fill=viridisAccuracy!48!white, draw=black, line width=0.22pt},
+  forget plot
+] table[x=x, y=score] {data/tumour_accuracy_seeds.dat};
+\addplot+[
+  only marks,
+  mark=*,
+  mark size=1.05pt,
+  color=black,
+  fill=viridisMacro!48!white,
+  mark options={fill=viridisMacro!48!white, draw=black, line width=0.22pt},
+  forget plot
+] table[x=x, y=score] {data/tumour_macro_f1_seeds.dat};
+\addplot+[
+  only marks,
+  mark=*,
+  mark size=1.05pt,
+  color=black,
+  fill=viridisWeighted!48!white,
+  mark options={fill=viridisWeighted!48!white, draw=black, line width=0.22pt},
+  forget plot
+] table[x=x, y=score] {data/tumour_weighted_f1_seeds.dat};
+\addlegendimage{area legend, draw=black, fill=viridisAccuracy, fill opacity=0.78, line width=0.58pt}
+\addlegendentry{Accuracy}
+\addlegendimage{area legend, draw=black, fill=viridisMacro, fill opacity=0.78, line width=0.58pt}
+\addlegendentry{Macro F1}
+\addlegendimage{area legend, draw=black, fill=viridisWeighted, fill opacity=0.78, line width=0.58pt}
+\addlegendentry{Weighted F1}
+
+\nextgroupplot[
+  xmin=0.5,
+  xmax=5.5,
+  ymin=0.965,
+  ymax=0.995,
+  ylabel={MRI plane score},
+  xlabel={Training set},
+  xtick={1,2,3,4,5},
+  xticklabels={Baseline,Aug.\ (1:1),Aug.\ (1:2),Filt.\ (1:1),Filt.\ (1:2)},
+  x tick label style={font=\scriptsize\sffamily, /pgf/number format/assume math mode=true, /pgf/number format/assume math mode=true},
+  xtick style={draw=none},
+  after end axis/.code={
+    \foreach \xpos in {1.5, 2.5, 3.5, 4.5}{
+      \draw[black, line width=0.45pt]
+        (axis cs:\xpos, 0.965) --
+        ([yshift=-2pt]axis cs:\xpos, 0.965);
+    }
+  },
+  ytick={0.97,0.98,0.99},
+  scaled y ticks=false,
+  yticklabel style={/pgf/number format/fixed, /pgf/number format/precision=2},
+]
+\draw[draw=black, fill=viridisAccuracy, fill opacity=0.78, line width=0.58pt] (axis cs:0.690000,0.977000) rectangle (axis cs:0.870000,0.980750);
+\draw[draw=black, line width=0.72pt] (axis cs:0.690000,0.978500) -- (axis cs:0.870000,0.978500);
+\draw[draw=black, line width=0.48pt] (axis cs:0.780000,0.973000) -- (axis cs:0.780000,0.977000);
+\draw[draw=black, line width=0.48pt] (axis cs:0.780000,0.980750) -- (axis cs:0.780000,0.983000);
+\draw[draw=black, line width=0.48pt] (axis cs:0.690000,0.973000) -- (axis cs:0.870000,0.973000);
+\draw[draw=black, line width=0.48pt] (axis cs:0.690000,0.983000) -- (axis cs:0.870000,0.983000);
+\draw[draw=black, fill=viridisAccuracy, fill opacity=0.78, line width=0.58pt] (axis cs:1.690000,0.981000) rectangle (axis cs:1.870000,0.983000);
+\draw[draw=black, line width=0.72pt] (axis cs:1.690000,0.982000) -- (axis cs:1.870000,0.982000);
+\draw[draw=black, line width=0.48pt] (axis cs:1.780000,0.978000) -- (axis cs:1.780000,0.981000);
+\draw[draw=black, line width=0.48pt] (axis cs:1.780000,0.983000) -- (axis cs:1.780000,0.983000);
+\draw[draw=black, line width=0.48pt] (axis cs:1.690000,0.978000) -- (axis cs:1.870000,0.978000);
+\draw[draw=black, line width=0.48pt] (axis cs:1.690000,0.983000) -- (axis cs:1.870000,0.983000);
+\draw[draw=black, fill=viridisAccuracy, fill opacity=0.78, line width=0.58pt] (axis cs:2.690000,0.981250) rectangle (axis cs:2.870000,0.984750);
+\draw[draw=black, line width=0.72pt] (axis cs:2.690000,0.983000) -- (axis cs:2.870000,0.983000);
+\draw[draw=black, line width=0.48pt] (axis cs:2.780000,0.979000) -- (axis cs:2.780000,0.981250);
+\draw[draw=black, line width=0.48pt] (axis cs:2.780000,0.984750) -- (axis cs:2.780000,0.986000);
+\draw[draw=black, line width=0.48pt] (axis cs:2.690000,0.979000) -- (axis cs:2.870000,0.979000);
+\draw[draw=black, line width=0.48pt] (axis cs:2.690000,0.986000) -- (axis cs:2.870000,0.986000);
+\draw[draw=black, fill=viridisAccuracy, fill opacity=0.78, line width=0.58pt] (axis cs:3.690000,0.979500) rectangle (axis cs:3.870000,0.985500);
+\draw[draw=black, line width=0.72pt] (axis cs:3.690000,0.983000) -- (axis cs:3.870000,0.983000);
+\draw[draw=black, line width=0.48pt] (axis cs:3.780000,0.976000) -- (axis cs:3.780000,0.979500);
+\draw[draw=black, line width=0.48pt] (axis cs:3.780000,0.985500) -- (axis cs:3.780000,0.988000);
+\draw[draw=black, line width=0.48pt] (axis cs:3.690000,0.976000) -- (axis cs:3.870000,0.976000);
+\draw[draw=black, line width=0.48pt] (axis cs:3.690000,0.988000) -- (axis cs:3.870000,0.988000);
+\draw[draw=black, fill=viridisAccuracy, fill opacity=0.78, line width=0.58pt] (axis cs:4.690000,0.980000) rectangle (axis cs:4.870000,0.984750);
+\draw[draw=black, line width=0.72pt] (axis cs:4.690000,0.982500) -- (axis cs:4.870000,0.982500);
+\draw[draw=black, line width=0.48pt] (axis cs:4.780000,0.977000) -- (axis cs:4.780000,0.980000);
+\draw[draw=black, line width=0.48pt] (axis cs:4.780000,0.984750) -- (axis cs:4.780000,0.987000);
+\draw[draw=black, line width=0.48pt] (axis cs:4.690000,0.977000) -- (axis cs:4.870000,0.977000);
+\draw[draw=black, line width=0.48pt] (axis cs:4.690000,0.987000) -- (axis cs:4.870000,0.987000);
+\draw[draw=black, fill=viridisMacro, fill opacity=0.78, line width=0.58pt] (axis cs:0.910000,0.975810) rectangle (axis cs:1.090000,0.979774);
+\draw[draw=black, line width=0.72pt] (axis cs:0.910000,0.977451) -- (axis cs:1.090000,0.977451);
+\draw[draw=black, line width=0.48pt] (axis cs:1.000000,0.972076) -- (axis cs:1.000000,0.975810);
+\draw[draw=black, line width=0.48pt] (axis cs:1.000000,0.979774) -- (axis cs:1.000000,0.982257);
+\draw[draw=black, line width=0.48pt] (axis cs:0.910000,0.972076) -- (axis cs:1.090000,0.972076);
+\draw[draw=black, line width=0.48pt] (axis cs:0.910000,0.982257) -- (axis cs:1.090000,0.982257);
+\draw[draw=black, fill=viridisMacro, fill opacity=0.78, line width=0.58pt] (axis cs:1.910000,0.980236) rectangle (axis cs:2.090000,0.982088);
+\draw[draw=black, line width=0.72pt] (axis cs:1.910000,0.981145) -- (axis cs:2.090000,0.981145);
+\draw[draw=black, line width=0.48pt] (axis cs:2.000000,0.979027) -- (axis cs:2.000000,0.980236);
+\draw[draw=black, line width=0.48pt] (axis cs:2.000000,0.982088) -- (axis cs:2.000000,0.982543);
+\draw[draw=black, line width=0.48pt] (axis cs:1.910000,0.979027) -- (axis cs:2.090000,0.979027);
+\draw[draw=black, line width=0.48pt] (axis cs:1.910000,0.982543) -- (axis cs:2.090000,0.982543);
+\draw[draw=black, fill=viridisMacro, fill opacity=0.78, line width=0.58pt] (axis cs:2.910000,0.980499) rectangle (axis cs:3.090000,0.984170);
+\draw[draw=black, line width=0.72pt] (axis cs:2.910000,0.982258) -- (axis cs:3.090000,0.982258);
+\draw[draw=black, line width=0.48pt] (axis cs:3.000000,0.978238) -- (axis cs:3.000000,0.980499);
+\draw[draw=black, line width=0.48pt] (axis cs:3.000000,0.984170) -- (axis cs:3.000000,0.985456);
+\draw[draw=black, line width=0.48pt] (axis cs:2.910000,0.978238) -- (axis cs:3.090000,0.978238);
+\draw[draw=black, line width=0.48pt] (axis cs:2.910000,0.985456) -- (axis cs:3.090000,0.985456);
+\draw[draw=black, fill=viridisMacro, fill opacity=0.78, line width=0.58pt] (axis cs:3.910000,0.978549) rectangle (axis cs:4.090000,0.984541);
+\draw[draw=black, line width=0.72pt] (axis cs:3.910000,0.982155) -- (axis cs:4.090000,0.982155);
+\draw[draw=black, line width=0.48pt] (axis cs:4.000000,0.974668) -- (axis cs:4.000000,0.978549);
+\draw[draw=black, line width=0.48pt] (axis cs:4.000000,0.984541) -- (axis cs:4.000000,0.987113);
+\draw[draw=black, line width=0.48pt] (axis cs:3.910000,0.974668) -- (axis cs:4.090000,0.974668);
+\draw[draw=black, line width=0.48pt] (axis cs:3.910000,0.987113) -- (axis cs:4.090000,0.987113);
+\draw[draw=black, fill=viridisMacro, fill opacity=0.78, line width=0.58pt] (axis cs:4.910000,0.978992) rectangle (axis cs:5.090000,0.984046);
+\draw[draw=black, line width=0.72pt] (axis cs:4.910000,0.981740) -- (axis cs:5.090000,0.981740);
+\draw[draw=black, line width=0.48pt] (axis cs:5.000000,0.975759) -- (axis cs:5.000000,0.978992);
+\draw[draw=black, line width=0.48pt] (axis cs:5.000000,0.984046) -- (axis cs:5.000000,0.986460);
+\draw[draw=black, line width=0.48pt] (axis cs:4.910000,0.975759) -- (axis cs:5.090000,0.975759);
+\draw[draw=black, line width=0.48pt] (axis cs:4.910000,0.986460) -- (axis cs:5.090000,0.986460);
+\draw[draw=black, fill=viridisWeighted, fill opacity=0.78, line width=0.58pt] (axis cs:1.130000,0.976944) rectangle (axis cs:1.310000,0.980684);
+\draw[draw=black, line width=0.72pt] (axis cs:1.130000,0.978436) -- (axis cs:1.310000,0.978436);
+\draw[draw=black, line width=0.48pt] (axis cs:1.220000,0.973014) -- (axis cs:1.220000,0.976944);
+\draw[draw=black, line width=0.48pt] (axis cs:1.220000,0.980684) -- (axis cs:1.220000,0.982977);
+\draw[draw=black, line width=0.48pt] (axis cs:1.130000,0.973014) -- (axis cs:1.310000,0.973014);
+\draw[draw=black, line width=0.48pt] (axis cs:1.130000,0.982977) -- (axis cs:1.310000,0.982977);
+\draw[draw=black, fill=viridisWeighted, fill opacity=0.78, line width=0.58pt] (axis cs:2.130000,0.980957) rectangle (axis cs:2.310000,0.982958);
+\draw[draw=black, line width=0.72pt] (axis cs:2.130000,0.981977) -- (axis cs:2.310000,0.981977);
+\draw[draw=black, line width=0.48pt] (axis cs:2.220000,0.978005) -- (axis cs:2.220000,0.980957);
+\draw[draw=black, line width=0.48pt] (axis cs:2.220000,0.982958) -- (axis cs:2.220000,0.983013);
+\draw[draw=black, line width=0.48pt] (axis cs:2.130000,0.978005) -- (axis cs:2.310000,0.978005);
+\draw[draw=black, line width=0.48pt] (axis cs:2.130000,0.983013) -- (axis cs:2.310000,0.983013);
+\draw[draw=black, fill=viridisWeighted, fill opacity=0.78, line width=0.58pt] (axis cs:3.130000,0.981244) rectangle (axis cs:3.310000,0.984715);
+\draw[draw=black, line width=0.72pt] (axis cs:3.130000,0.982957) -- (axis cs:3.310000,0.982957);
+\draw[draw=black, line width=0.48pt] (axis cs:3.220000,0.978959) -- (axis cs:3.220000,0.981244);
+\draw[draw=black, line width=0.48pt] (axis cs:3.220000,0.984715) -- (axis cs:3.220000,0.986012);
+\draw[draw=black, line width=0.48pt] (axis cs:3.130000,0.978959) -- (axis cs:3.310000,0.978959);
+\draw[draw=black, line width=0.48pt] (axis cs:3.130000,0.986012) -- (axis cs:3.310000,0.986012);
+\draw[draw=black, fill=viridisWeighted, fill opacity=0.78, line width=0.58pt] (axis cs:4.130000,0.979491) rectangle (axis cs:4.310000,0.985479);
+\draw[draw=black, line width=0.72pt] (axis cs:4.130000,0.982962) -- (axis cs:4.310000,0.982962);
+\draw[draw=black, line width=0.48pt] (axis cs:4.220000,0.975987) -- (axis cs:4.220000,0.979491);
+\draw[draw=black, line width=0.48pt] (axis cs:4.220000,0.985479) -- (axis cs:4.220000,0.987993);
+\draw[draw=black, line width=0.48pt] (axis cs:4.130000,0.975987) -- (axis cs:4.310000,0.975987);
+\draw[draw=black, line width=0.48pt] (axis cs:4.130000,0.987993) -- (axis cs:4.310000,0.987993);
+\draw[draw=black, fill=viridisWeighted, fill opacity=0.78, line width=0.58pt] (axis cs:5.130000,0.979927) rectangle (axis cs:5.310000,0.984764);
+\draw[draw=black, line width=0.72pt] (axis cs:5.130000,0.982495) -- (axis cs:5.310000,0.982495);
+\draw[draw=black, line width=0.48pt] (axis cs:5.220000,0.976971) -- (axis cs:5.220000,0.979927);
+\draw[draw=black, line width=0.48pt] (axis cs:5.220000,0.984764) -- (axis cs:5.220000,0.987005);
+\draw[draw=black, line width=0.48pt] (axis cs:5.130000,0.976971) -- (axis cs:5.310000,0.976971);
+\draw[draw=black, line width=0.48pt] (axis cs:5.130000,0.987005) -- (axis cs:5.310000,0.987005);
+\addplot+[
+  only marks,
+  mark=*,
+  mark size=1.05pt,
+  color=black,
+  fill=viridisAccuracy!48!white,
+  mark options={fill=viridisAccuracy!48!white, draw=black, line width=0.22pt},
+  forget plot
+] table[x=x, y=score] {data/plane_accuracy_seeds.dat};
+\addplot+[
+  only marks,
+  mark=*,
+  mark size=1.05pt,
+  color=black,
+  fill=viridisMacro!48!white,
+  mark options={fill=viridisMacro!48!white, draw=black, line width=0.22pt},
+  forget plot
+] table[x=x, y=score] {data/plane_macro_f1_seeds.dat};
+\addplot+[
+  only marks,
+  mark=*,
+  mark size=1.05pt,
+  color=black,
+  fill=viridisWeighted!48!white,
+  mark options={fill=viridisWeighted!48!white, draw=black, line width=0.22pt},
+  forget plot
+] table[x=x, y=score] {data/plane_weighted_f1_seeds.dat};
+
+\end{groupplot}
+\end{tikzpicture}
+\end{document}

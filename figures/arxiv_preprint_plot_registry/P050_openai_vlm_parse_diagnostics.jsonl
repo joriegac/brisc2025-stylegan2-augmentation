@@ -1,0 +1,8 @@
+{"arxiv_role": "Supplemental reproducibility diagnostic.", "code": "P050", "current_or_expected_figure_outputs": [], "data_status": "available", "family": "OpenAI VLM audit", "notes": "", "plot_type": "small summary bar plot", "record_type": "plot_metadata", "slug": "openai_vlm_parse_diagnostics", "source_paths": ["C:\\Users\\norie\\Documents\\Codex\\2026-05-02\\files-mentioned-by-the-user-classify\\vlm_realism_train_augmented_r2_balanced6000_gpt54mini\\analysis_openai_vlm\\openai_vlm_audit_summary.json", "C:\\Users\\norie\\Documents\\Codex\\2026-05-02\\files-mentioned-by-the-user-classify\\vlm_realism_train_augmented_r2_balanced6000_gpt54mini\\analysis_openai_vlm\\parse_errors.jsonl"], "title": "OpenAI VLM parse and completion diagnostics"}
+{"code": "P050", "metric": "total_requests", "record_type": "data", "value": 6000}
+{"code": "P050", "metric": "rows_with_any_recovered_fields", "record_type": "data", "value": 6000}
+{"code": "P050", "metric": "rows_with_missing_source_judgement", "record_type": "data", "value": 305}
+{"code": "P050", "metric": "rows_with_missing_gate_fields", "record_type": "data", "value": 226}
+{"code": "P050", "metric": "explicit_parse_errors", "record_type": "data", "value": 0}
+{"code": "P050", "metric": "parse_mode", "mode": "complete_json", "record_type": "data", "value": 4795}
+{"code": "P050", "metric": "parse_mode", "mode": "salvaged_truncated_json", "record_type": "data", "value": 1205}

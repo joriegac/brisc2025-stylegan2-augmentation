@@ -1,0 +1,24 @@
+{"arxiv_role": "VLM rationale/artifact audit figure.", "code": "P047", "current_or_expected_figure_outputs": ["C:\\Users\\norie\\Documents\\Codex\\2026-05-02\\files-mentioned-by-the-user-classify\\vlm_realism_train_augmented_r2_balanced6000_gpt54mini\\analysis_openai_vlm\\figures\\vlm_realism_artifacts_confidence.pdf", "C:\\Users\\norie\\Documents\\Codex\\2026-05-02\\files-mentioned-by-the-user-classify\\vlm_realism_train_augmented_r2_balanced6000_gpt54mini\\analysis_openai_vlm\\figures\\vlm_realism_artifacts_confidence.svg"], "data_status": "available", "family": "OpenAI VLM audit", "notes": "", "plot_type": "count plot plus confidence distributions", "record_type": "plot_metadata", "slug": "openai_vlm_artifacts_confidence", "source_paths": ["C:\\Users\\norie\\Documents\\Codex\\2026-05-02\\files-mentioned-by-the-user-classify\\vlm_realism_train_augmented_r2_balanced6000_gpt54mini\\analysis_openai_vlm\\responses_openai_joined.csv"], "title": "OpenAI VLM artifact categories and confidence distributions"}
+{"artifact_category": "anatomy_implausible", "code": "P047", "n": 13, "record_kind": "artifact_count", "record_type": "data", "true_source": "real"}
+{"artifact_category": "contrast_or_intensity_artifact", "code": "P047", "n": 18, "record_kind": "artifact_count", "record_type": "data", "true_source": "real"}
+{"artifact_category": "edge_or_crop_artifact", "code": "P047", "n": 51, "record_kind": "artifact_count", "record_type": "data", "true_source": "real"}
+{"artifact_category": "missing", "code": "P047", "n": 203, "record_kind": "artifact_count", "record_type": "data", "true_source": "real"}
+{"artifact_category": "none_obvious", "code": "P047", "n": 2728, "record_kind": "artifact_count", "record_type": "data", "true_source": "real"}
+{"artifact_category": "other", "code": "P047", "n": 1, "record_kind": "artifact_count", "record_type": "data", "true_source": "real"}
+{"artifact_category": "repetition_or_symmetry_artifact", "code": "P047", "n": 1, "record_kind": "artifact_count", "record_type": "data", "true_source": "real"}
+{"artifact_category": "texture_artifact", "code": "P047", "n": 16, "record_kind": "artifact_count", "record_type": "data", "true_source": "real"}
+{"artifact_category": "anatomy_implausible", "code": "P047", "n": 47, "record_kind": "artifact_count", "record_type": "data", "true_source": "synthetic"}
+{"artifact_category": "contrast_or_intensity_artifact", "code": "P047", "n": 82, "record_kind": "artifact_count", "record_type": "data", "true_source": "synthetic"}
+{"artifact_category": "edge_or_crop_artifact", "code": "P047", "n": 87, "record_kind": "artifact_count", "record_type": "data", "true_source": "synthetic"}
+{"artifact_category": "missing", "code": "P047", "n": 250, "record_kind": "artifact_count", "record_type": "data", "true_source": "synthetic"}
+{"artifact_category": "noise_pattern_artifact", "code": "P047", "n": 11, "record_kind": "artifact_count", "record_type": "data", "true_source": "synthetic"}
+{"artifact_category": "none_obvious", "code": "P047", "n": 2580, "record_kind": "artifact_count", "record_type": "data", "true_source": "synthetic"}
+{"artifact_category": "other", "code": "P047", "n": 12, "record_kind": "artifact_count", "record_type": "data", "true_source": "synthetic"}
+{"artifact_category": "repetition_or_symmetry_artifact", "code": "P047", "n": 5, "record_kind": "artifact_count", "record_type": "data", "true_source": "synthetic"}
+{"artifact_category": "texture_artifact", "code": "P047", "n": 77, "record_kind": "artifact_count", "record_type": "data", "true_source": "synthetic"}
+{"code": "P047", "confidence_field": "plane_confidence", "mean": 0.981275191104934, "median": 0.99, "n": 2878, "record_kind": "confidence_summary", "record_type": "data", "true_source": "real"}
+{"code": "P047", "confidence_field": "source_confidence", "mean": 0.8597955586887558, "median": 0.88, "n": 2837, "record_kind": "confidence_summary", "record_type": "data", "true_source": "real"}
+{"code": "P047", "confidence_field": "tumour_confidence", "mean": 0.7864604810996563, "median": 0.81, "n": 2910, "record_kind": "confidence_summary", "record_type": "data", "true_source": "real"}
+{"code": "P047", "confidence_field": "plane_confidence", "mean": 0.974698080279232, "median": 0.98, "n": 2865, "record_kind": "confidence_summary", "record_type": "data", "true_source": "synthetic"}
+{"code": "P047", "confidence_field": "source_confidence", "mean": 0.827599573257468, "median": 0.84, "n": 2812, "record_kind": "confidence_summary", "record_type": "data", "true_source": "synthetic"}
+{"code": "P047", "confidence_field": "tumour_confidence", "mean": 0.7374533517622668, "median": 0.74, "n": 2894, "record_kind": "confidence_summary", "record_type": "data", "true_source": "synthetic"}

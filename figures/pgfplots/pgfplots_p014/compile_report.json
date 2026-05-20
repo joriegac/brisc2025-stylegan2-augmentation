@@ -1,0 +1,23 @@
+{
+  "code": "P014",
+  "source_jsonl": "C:\\Users\\norie\\Documents\\Codex\\2026-05-02\\files-mentioned-by-the-user-classify\\figures\\arxiv_preprint_plot_registry\\P014_rf_v2_aggregate_metrics.jsonl",
+  "seed_points": 150,
+  "summary_points": 15,
+  "metrics": [
+    "Accuracy",
+    "Macro F1",
+    "Weighted F1"
+  ],
+  "experiments": [
+    "Baseline",
+    "Aug. 1x",
+    "Aug. 2x",
+    "Filt. 1x",
+    "Filt. 2x"
+  ],
+  "interval": "box spans seed-level IQR with median line and min/max whiskers; jittered seed-level points are overlaid",
+  "tex": "C:\\Users\\norie\\Documents\\Codex\\2026-05-02\\files-mentioned-by-the-user-classify\\figures\\pgfplots_p014\\P014_rf_v2_aggregate_metrics.tex",
+  "pdf": "C:\\Users\\norie\\Documents\\Codex\\2026-05-02\\files-mentioned-by-the-user-classify\\figures\\pgfplots_p014\\P014_rf_v2_aggregate_metrics.pdf",
+  "compile_returncode": 0,
+  "compile_log": "C:\\Users\\norie\\Documents\\Codex\\2026-05-02\\files-mentioned-by-the-user-classify\\figures\\pgfplots_p014\\P014_rf_v2_aggregate_metrics.compile.log"
+}

@@ -1,0 +1,6 @@
+head	experiment	metric	x	mean	halfci	n
+plane	baseline	weighted_f1	1.220000	0.978256288	0.00225787183	10
+plane	augmented_r1	weighted_f1	2.220000	0.981572159	0.00117688735	10
+plane	augmented_r2	weighted_f1	3.220000	0.9829759	0.00165729746	10
+plane	filtered_r1	weighted_f1	4.220000	0.982380914	0.00278333768	10
+plane	filtered_r2	weighted_f1	5.220000	0.982272302	0.00254774121	10

@@ -1,0 +1,132 @@
+\documentclass[tikz,border=2pt]{standalone}
+\input{../pgfplots_font_setup.tex}
+\usepackage{pgfplots}
+\usepgfplotslibrary{groupplots,fillbetween}
+\usetikzlibrary{calc}
+\pgfplotsset{compat=1.18}
+
+% Condition colours -- same palette as P017/P018/P022/P023.
+\definecolor{condAugOne}{HTML}{7B1E3A}
+\definecolor{condAugTwo}{HTML}{2D708E}
+\definecolor{condFiltOne}{HTML}{20A387}
+\definecolor{condFiltTwo}{HTML}{73D055}
+
+\pgfplotsset{
+  every axis/.append style={
+    width=90mm,
+    height=39mm,
+    scale only axis,
+    xmin=1,
+    xmax=1705,
+    enlargelimits=false,
+    xtick={1,400,800,1200,1600},
+    scaled x ticks=false,
+    axis line style={black, line width=0.35pt},
+    tick style={black, line width=0.35pt},
+    tick label style={font=\scriptsize\sffamily, /pgf/number format/assume math mode=true, /pgf/number format/fixed},
+    label style={font=\scriptsize\sffamily},
+    tick align=outside,
+    tick pos=left,
+    major tick length=2.2pt,
+    legend style={
+      font=\pgfplotlegendfont,
+      draw=none,
+      fill=none,
+      cells={anchor=west},
+      /tikz/every even column/.append style={column sep=3pt},
+      row sep=0pt
+    },
+    grid=both,
+    major grid style={black!10, line width=0.25pt},
+    minor grid style={black!5, line width=0.2pt},
+    minor tick num=1,
+    unbounded coords=discard,
+  },
+}
+
+\begin{document}
+\begin{tikzpicture}
+\begin{groupplot}[
+  group style={group size=1 by 2, vertical sep=8mm},
+]
+
+\nextgroupplot[
+  ylabel={Validation loss},
+  ymin=-0.90,
+  ymax=2.70,
+  ytick={-0.5,0,0.5,1.0,1.5,2.0,2.5},
+  xticklabels={},
+  legend columns=5,
+  legend style={
+    at={(0.5,1.20)}, anchor=south,
+    font=\pgfplotlegendfont, draw=none, fill=none,
+    cells={anchor=west},
+    /tikz/every even column/.append style={column sep=3pt},
+    row sep=0pt
+  },
+  after end axis/.code={
+    \node[anchor=south east, font=\scriptsize\sffamily\bfseries, yshift=2pt]
+      at (current axis.north east) {(a)};
+  },
+]
+\addplot[name path=valid_loss_baseline_upper, draw=none, forget plot] table[x=step, y=vl_ci_high] {data/smooth_mobilevitv2_validation_summary_baseline.dat};
+\addplot[name path=valid_loss_baseline_lower, draw=none, forget plot] table[x=step, y=vl_ci_low] {data/smooth_mobilevitv2_validation_summary_baseline.dat};
+\addplot[black!72, fill opacity=0.14, draw=none, forget plot] fill between[of=valid_loss_baseline_upper and valid_loss_baseline_lower];
+\addplot[black!72, line width=0.72pt] table[x=step, y=vl_mean] {data/smooth_mobilevitv2_validation_summary_baseline.dat};
+\addlegendentry{Baseline}
+\addplot[name path=valid_loss_augmented_r1_upper, draw=none, forget plot] table[x=step, y=vl_ci_high] {data/smooth_mobilevitv2_validation_summary_augmented_r1.dat};
+\addplot[name path=valid_loss_augmented_r1_lower, draw=none, forget plot] table[x=step, y=vl_ci_low] {data/smooth_mobilevitv2_validation_summary_augmented_r1.dat};
+\addplot[condAugOne, fill opacity=0.14, draw=none, forget plot] fill between[of=valid_loss_augmented_r1_upper and valid_loss_augmented_r1_lower];
+\addplot[condAugOne, line width=0.72pt] table[x=step, y=vl_mean] {data/smooth_mobilevitv2_validation_summary_augmented_r1.dat};
+\addlegendentry{Augmented 1:1}
+\addplot[name path=valid_loss_filtered_r1_upper, draw=none, forget plot] table[x=step, y=vl_ci_high] {data/smooth_mobilevitv2_validation_summary_filtered_r1.dat};
+\addplot[name path=valid_loss_filtered_r1_lower, draw=none, forget plot] table[x=step, y=vl_ci_low] {data/smooth_mobilevitv2_validation_summary_filtered_r1.dat};
+\addplot[condFiltOne, fill opacity=0.14, draw=none, forget plot] fill between[of=valid_loss_filtered_r1_upper and valid_loss_filtered_r1_lower];
+\addplot[condFiltOne, line width=0.72pt] table[x=step, y=vl_mean] {data/smooth_mobilevitv2_validation_summary_filtered_r1.dat};
+\addlegendentry{Filtered 1:1}
+\addplot[name path=valid_loss_augmented_r2_upper, draw=none, forget plot] table[x=step, y=vl_ci_high] {data/smooth_mobilevitv2_validation_summary_augmented_r2.dat};
+\addplot[name path=valid_loss_augmented_r2_lower, draw=none, forget plot] table[x=step, y=vl_ci_low] {data/smooth_mobilevitv2_validation_summary_augmented_r2.dat};
+\addplot[condAugTwo, fill opacity=0.14, draw=none, forget plot] fill between[of=valid_loss_augmented_r2_upper and valid_loss_augmented_r2_lower];
+\addplot[condAugTwo, line width=0.72pt] table[x=step, y=vl_mean] {data/smooth_mobilevitv2_validation_summary_augmented_r2.dat};
+\addlegendentry{Augmented 1:2}
+\addplot[name path=valid_loss_filtered_r2_upper, draw=none, forget plot] table[x=step, y=vl_ci_high] {data/smooth_mobilevitv2_validation_summary_filtered_r2.dat};
+\addplot[name path=valid_loss_filtered_r2_lower, draw=none, forget plot] table[x=step, y=vl_ci_low] {data/smooth_mobilevitv2_validation_summary_filtered_r2.dat};
+\addplot[condFiltTwo, fill opacity=0.14, draw=none, forget plot] fill between[of=valid_loss_filtered_r2_upper and valid_loss_filtered_r2_lower];
+\addplot[condFiltTwo, line width=0.72pt] table[x=step, y=vl_mean] {data/smooth_mobilevitv2_validation_summary_filtered_r2.dat};
+\addlegendentry{Filtered 1:2}
+
+\nextgroupplot[
+  xlabel={Training step},
+  ylabel={Tumour validation accuracy (\%)},
+  ymin=20,
+  ymax=101,
+  ytick={20,40,60,80,100},
+  after end axis/.code={
+    \node[anchor=south east, font=\scriptsize\sffamily\bfseries, yshift=2pt]
+      at (current axis.north east) {(b)};
+  },
+]
+\addplot[name path=valid_acc_baseline_upper, draw=none, forget plot] table[x=step, y=vl_tumour_ci_high] {data/smooth_mobilevitv2_validation_summary_baseline.dat};
+\addplot[name path=valid_acc_baseline_lower, draw=none, forget plot] table[x=step, y=vl_tumour_ci_low] {data/smooth_mobilevitv2_validation_summary_baseline.dat};
+\addplot[black!72, fill opacity=0.14, draw=none, forget plot] fill between[of=valid_acc_baseline_upper and valid_acc_baseline_lower];
+\addplot[black!72, line width=0.72pt] table[x=step, y=vl_tumour_mean] {data/smooth_mobilevitv2_validation_summary_baseline.dat};
+\addplot[name path=valid_acc_augmented_r1_upper, draw=none, forget plot] table[x=step, y=vl_tumour_ci_high] {data/smooth_mobilevitv2_validation_summary_augmented_r1.dat};
+\addplot[name path=valid_acc_augmented_r1_lower, draw=none, forget plot] table[x=step, y=vl_tumour_ci_low] {data/smooth_mobilevitv2_validation_summary_augmented_r1.dat};
+\addplot[condAugOne, fill opacity=0.14, draw=none, forget plot] fill between[of=valid_acc_augmented_r1_upper and valid_acc_augmented_r1_lower];
+\addplot[condAugOne, line width=0.72pt] table[x=step, y=vl_tumour_mean] {data/smooth_mobilevitv2_validation_summary_augmented_r1.dat};
+\addplot[name path=valid_acc_filtered_r1_upper, draw=none, forget plot] table[x=step, y=vl_tumour_ci_high] {data/smooth_mobilevitv2_validation_summary_filtered_r1.dat};
+\addplot[name path=valid_acc_filtered_r1_lower, draw=none, forget plot] table[x=step, y=vl_tumour_ci_low] {data/smooth_mobilevitv2_validation_summary_filtered_r1.dat};
+\addplot[condFiltOne, fill opacity=0.14, draw=none, forget plot] fill between[of=valid_acc_filtered_r1_upper and valid_acc_filtered_r1_lower];
+\addplot[condFiltOne, line width=0.72pt] table[x=step, y=vl_tumour_mean] {data/smooth_mobilevitv2_validation_summary_filtered_r1.dat};
+\addplot[name path=valid_acc_augmented_r2_upper, draw=none, forget plot] table[x=step, y=vl_tumour_ci_high] {data/smooth_mobilevitv2_validation_summary_augmented_r2.dat};
+\addplot[name path=valid_acc_augmented_r2_lower, draw=none, forget plot] table[x=step, y=vl_tumour_ci_low] {data/smooth_mobilevitv2_validation_summary_augmented_r2.dat};
+\addplot[condAugTwo, fill opacity=0.14, draw=none, forget plot] fill between[of=valid_acc_augmented_r2_upper and valid_acc_augmented_r2_lower];
+\addplot[condAugTwo, line width=0.72pt] table[x=step, y=vl_tumour_mean] {data/smooth_mobilevitv2_validation_summary_augmented_r2.dat};
+\addplot[name path=valid_acc_filtered_r2_upper, draw=none, forget plot] table[x=step, y=vl_tumour_ci_high] {data/smooth_mobilevitv2_validation_summary_filtered_r2.dat};
+\addplot[name path=valid_acc_filtered_r2_lower, draw=none, forget plot] table[x=step, y=vl_tumour_ci_low] {data/smooth_mobilevitv2_validation_summary_filtered_r2.dat};
+\addplot[condFiltTwo, fill opacity=0.14, draw=none, forget plot] fill between[of=valid_acc_filtered_r2_upper and valid_acc_filtered_r2_lower];
+\addplot[condFiltTwo, line width=0.72pt] table[x=step, y=vl_tumour_mean] {data/smooth_mobilevitv2_validation_summary_filtered_r2.dat};
+
+\end{groupplot}
+\end{tikzpicture}
+\end{document}

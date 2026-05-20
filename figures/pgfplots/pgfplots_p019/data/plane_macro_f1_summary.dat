@@ -1,0 +1,6 @@
+head	experiment	metric	x	mean	halfci	n
+plane	baseline	macro_f1	1.000000	0.977296813	0.00241147313	10
+plane	augmented_r1	macro_f1	2.000000	0.980757411	0.00124102696	10
+plane	augmented_r2	macro_f1	3.000000	0.982272561	0.00172208727	10
+plane	filtered_r1	macro_f1	4.000000	0.981487579	0.00288931967	10
+plane	filtered_r2	macro_f1	5.000000	0.981477896	0.00263484273	10

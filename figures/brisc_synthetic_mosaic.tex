@@ -1,0 +1,11 @@
+\documentclass[tikz,border=0pt]{standalone}
+\usepackage{fontspec}
+\setsansfont{Source Sans Pro}
+\usepackage{graphicx}
+\begin{document}
+\begin{tikzpicture}[x=1mm,y=1mm]
+  \path[use as bounding box] (0,0) rectangle (156,-208);
+  \node[anchor=north west, inner sep=0pt] at (0,0)
+    {\includegraphics[width=156mm,height=208mm]{mosaics/brisc_synthetic_mosaic_panel.png}};
+\end{tikzpicture}
+\end{document}

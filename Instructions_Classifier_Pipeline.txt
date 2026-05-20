@@ -1,0 +1,124 @@
+# Collaborator Briefing — Downstream Classifier Experiment
+## StyleGAN2-ADA Synthetic MRI Augmentation Study (BRISC 2025)
+
+**Project lead:** José Rafael Noriega Cedeño
+**Institution:** Humber Polytechnic — Graduate Certificate in AI with Machine Learning
+**Target venue:** PLOS ONE / Scientific Reports
+
+---
+
+## What Has Been Done
+
+This project investigates whether StyleGAN2-ADA-generated synthetic MRI images can meaningfully augment a downstream brain tumor classifier when real training data is limited. The work uses the BRISC 2025 dataset, which contains T1-weighted brain MRI scans organized into four classes — **glioma, meningioma, pituitary, and no_tumor** — each captured across three imaging planes: **axial, coronal, and sagittal**. This yields 12 distinct (class × plane) combinations, and a separate StyleGAN2-ADA model was trained independently for each.
+
+### Dataset
+
+The BRISC 2025 dataset provides pre-segregated training and test splits. Training set sizes per combination range from 310 to 521 images. All images are 128×128 pixels, single-channel T1-weighted MRI. A preprocessing pipeline (which you can find at @StyleGAN2-ADA_Implementation_Optimized.ipynb) was developed and applied consistently across all real and synthetic images, consisting of: noise-floor skull stripping via Otsu thresholding with flood-fill background removal, followed by p1/p99 intensity normalization within the brain mask, and zero-padding of sub-threshold background pixels. This needs to be applied identically to the test set.
+
+### Model Training
+
+Twelve StyleGAN2-ADA models were trained to completion (1,000 kimgs each) on a single GPU. Adaptive augmentation (ADA) was enabled throughout, with the augmentation probability (`aug_p`) monitored as a diagnostic signal for dataset exhaustion. Models were trained without class conditioning — each model generates images for exactly one (class, plane) combination.
+
+### Checkpoint Evaluation
+
+Every model was evaluated at all 22 checkpoints (0–1,000 kimgs in ~48 kimg increments) using three metrics computed over 50,000 samples:
+
+- **FID** (`fid50k_full`) — Fréchet Inception Distance, measuring distributional overlap between real and generated images in InceptionV3 feature space.
+- **Precision** (`pr50k3_full_precision`) — fraction of generated images whose nearest neighbor in feature space is a real image; measures fidelity.
+- **Recall** (`pr50k3_full_recall`) — fraction of real images whose nearest neighbor is a generated image; measures distributional coverage.
+
+### Checkpoint Selection Algorithm
+
+A three-metric consensus framework was developed and validated across all 12 models. It operates in three stages:
+
+1. **FID tier assignment** using medically calibrated thresholds (Skandarani et al., 2023): EXTRAORDINARY (FID < 30), EXCELLENT (30–50), GOOD (50–75), FAIR (≥75). Natural image thresholds do not apply to this domain. All checkpoints within the best achieved tier are treated as FID-equivalent.
+2. **Composite score tiebreak** within the tier: `score = 0.5 × precision + 0.5 × recall`. Equal weighting was empirically validated — across all 12 training trajectories, precision degradation correlates with FID degradation at greater than a 1:1 ratio, confirming that precision and recall contribute symmetrically to the downstream metric.
+3. **Recall tiebreak** when the top two composite scores are within 0.005 of each other, as a diversity tiebreak.
+
+A key mechanistic finding established across all models: **a 100% relative recall gain was insufficient to prevent FID degradation when accompanied by a meaningful precision loss**, confirming that fidelity (precision) is the dominant term in the Inception feature alignment that FID measures. This finding justifies equal weighting and is reproducible across independent models.
+
+### Optimal Checkpoints — Full Study Results
+
+| Model | Real N | Optimal kimg | % Budget | Tier | FID | Precision | Recall |
+|---|---|---|---|---|---|---|---|
+| glioma_ax | 394 | 960 | 96.0% | EXTRAORDINARY | 25.36 | 0.5128 | 0.0863 |
+| glioma_co | 430 | 336 | 33.6% | EXCELLENT | 35.27 | 0.6178 | 0.0814 |
+| glioma_sa | 323 | 240 | 24.0% | GOOD | 53.05 | 0.5693 | 0.0279 |
+| meningioma_ax | 423 | 1000 | 100.0% | EXCELLENT | 36.11 | 0.6066 | 0.0567 |
+| meningioma_co | 426 | 240 | 24.0% | GOOD | 54.18 | 0.4243 | 0.0352 |
+| meningioma_sa | 480 | 240 | 24.0% | EXCELLENT | 43.93 | 0.4931 | 0.0229 |
+| pituitary_ax | 426 | 288 | 28.8% | EXTRAORDINARY | 28.40 | 0.4811 | 0.0211 |
+| pituitary_co | 510 | 192 | 19.2% | EXTRAORDINARY | 29.38 | 0.3590 | 0.0314 |
+| pituitary_sa | 521 | 192 | 19.2% | EXCELLENT | 46.39 | 0.3007 | 0.0134 |
+| no_tumor_ax | 352 | 672 | 67.2% | EXCELLENT | 48.28 | 0.3446 | 0.0767 |
+| no_tumor_co | 310 | 288 | 28.8% | GOOD | 51.84 | 0.4839 | 0.0097 |
+| no_tumor_sa | 405 | TBD | — | — | — | — | — |
+
+*no_tumor_sa checkpoint evaluation is in progress at time of writing. The dataset size is 405.*
+
+### Synthetic Image Generation
+
+Synthetic images for each model are about to be (or are being) generated using the optimal checkpoint selected by the algorithm above. The generation pipeline applies the identical preprocessing as the real images. Perceptual hash (pHash) deduplication is enforced with a Hamming distance threshold of 6 to prevent near-duplicate images in the synthetic set.
+
+The generation target is **2,000 total images per (class × plane) combination** — meaning synthetic images are generated to top up each combination from its real count to exactly 2,000. This design normalizes the joint class-plane distribution across all 12 combinations, eliminating dataset size as a confound in the downstream classifier experiment.
+
+| Model | Real N | Synthetic to Generate | Total |
+|---|---|---|---|
+| glioma_ax | 394 | 1,606 | 2,000 |
+| glioma_co | 430 | 1,570 | 2,000 |
+| glioma_sa | 323 | 1,677 | 2,000 |
+| meningioma_ax | 423 | 1,577 | 2,000 |
+| meningioma_co | 426 | 1,574 | 2,000 |
+| meningioma_sa | 480 | 1,520 | 2,000 |
+| pituitary_ax | 426 | 1,574 | 2,000 |
+| pituitary_co | 510 | 1,490 | 2,000 |
+| pituitary_sa | 521 | 1,479 | 2,000 |
+| no_tumor_ax | 352 | 1,648 | 2,000 |
+| no_tumor_co | 310 | 1,690 | 2,000 |
+| no_tumor_sa | 405 | 1,595 | 2,000 |
+| **Total** | **4,870** | **19,000** | **24,000** |
+
+---
+
+## What You Are Tasked With
+
+You are implementing the downstream classifier experiment that constitutes the primary empirical validation of this study. The experiment asks a single question: **does training a classifier on real + synthetic data produce measurably better performance than training on real data alone?**
+
+The classifier is a **Random Forest** (scikit-learn `RandomForestClassifier`). This is a deliberate choice — RF is a low-capacity, high-interpretability baseline. If augmentation improves a model that cannot exploit subtle deep representations, the improvement is attributable purely to distributional coverage rather than model capacity, and any more expressive architecture will see at least equivalent benefit. This is the correct conservative baseline for a publication claim.
+
+The task is **4-class classification**: glioma / meningioma / pituitary / no_tumor. Plane information is not a classification target — images from all three planes for a given class are pooled under that class label.
+
+Features are extracted using a **frozen pretrained InceptionV3**, specifically the pool3 layer (2048-dimensional), applied identically to all images. This is methodologically consistent with FID, which uses the same backbone — the feature space in which we measured generation quality is the same one in which we train and evaluate the classifier.
+
+The test set is the BRISC 2025 pre-segregated test split. It contains only real images and is held out entirely from both experiments. Preprocessing applied to test images must be identical to the training preprocessing pipeline described above.
+
+### Pipeline Structure
+
+The implementation should consist of the following six cells or scripts:
+
+**Cell A — Dataset Assembly**
+Crawl training and synthetic directories, build and save three manifest CSVs (`train_real.csv`, `train_augmented.csv`, `test.csv`) with columns: `filepath, class, plane, source`. Verify per-combo counts. Print class distribution for all three splits.
+
+**Cell B — Preprocessing + Feature Extraction**
+Real and synthetic images can be already found preprocessed in the right directories (synthetic images are preprocessed at the time of generation). Test set must be preprocessed. Apply the same pipeline as in @StyleGAN2-ADA_Implementation_Optimized.ipynb to all images. Extract InceptionV3 pool3 features. Cache to disk as `.npy` arrays with matching label arrays. Confirm shapes and absence of NaNs.
+
+**Cell C — Experiment A: Baseline RF**
+Train `RandomForestClassifier(n_estimators=500)` on real features only. Evaluate on test set. Repeat across 10 independent random seeds. Report mean ± std for: overall accuracy, per-class F1, macro F1, weighted F1. Save all confusion matrices and compute the mean. Note: All illustration and plots using Seaborn. 
+
+**Cell D — Experiment B: Augmented RF**
+Identical to Cell C, same seeds, same test set. Training data is real + synthetic (2,000 per combo, 24,000 total). Report the same metrics.
+
+**Cell E — Statistical Comparison**
+Compute paired differences across seeds for each metric. Run paired one-tailed t-tests (directional hypothesis: augmentation improves performance). Report mean delta, 95% CI, t-statistic, and p-value per metric. Flag any metric where p > 0.05 — the paper reports the full picture honestly.
+
+**Cell F — Publication Figure**
+Single composite figure: per-class F1 comparison bar chart, overall metric grouped bar chart, and mean confusion matrices side by side (baseline vs augmented). Dark background, 300 DPI, saved to `figures/classifier_comparison.png`.
+
+### Important Notes
+
+- The preprocessing pipeline (skull stripping + normalization) must be byte-for-byte identical to the one used during synthetic image generation. The function is available in `cell_generate_images_v5.py`.
+- Do not apply data augmentation (flips, rotations, etc.) during classifier training. The experiment isolates the effect of synthetic data; additional augmentation would confound the result.
+- Use the same 10 random seeds for both experiments so that the paired t-test is valid.
+- Report per-class F1 individually — not just overall accuracy. The class imbalance in the original dataset (before synthetic augmentation) is what the experiment is designed to address, so per-class improvement is the primary claim.
+- All preprocessing and feature extraction must be applied to test images as well, using the same pipeline. The test set is never augmented or modified beyond preprocessing.
+- Formatting of the notebook identical to that of @StyleGAN2-ADA_Implementation_Optimized.ipynb

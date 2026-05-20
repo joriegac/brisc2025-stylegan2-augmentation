@@ -1,0 +1,27 @@
+{
+  "code": "P019",
+  "source_jsonl": "C:\\Users\\norie\\Documents\\Codex\\2026-05-02\\files-mentioned-by-the-user-classify\\figures\\arxiv_preprint_plot_registry\\P019_cnn_v2_aggregate_metrics.jsonl",
+  "seed_points": 300,
+  "summary_points": 30,
+  "heads": [
+    "Tumour score",
+    "Plane score"
+  ],
+  "metrics": [
+    "Accuracy",
+    "Macro F1",
+    "Weighted F1"
+  ],
+  "experiments": [
+    "Baseline",
+    "Aug. 1x",
+    "Aug. 2x",
+    "Filt. 1x",
+    "Filt. 2x"
+  ],
+  "interval": "mean +/- 95% t interval across seeds",
+  "tex": "C:\\Users\\norie\\Documents\\Codex\\2026-05-02\\files-mentioned-by-the-user-classify\\figures\\pgfplots_p019\\P019_cnn_v2_aggregate_metrics.tex",
+  "pdf": "C:\\Users\\norie\\Documents\\Codex\\2026-05-02\\files-mentioned-by-the-user-classify\\figures\\pgfplots_p019\\P019_cnn_v2_aggregate_metrics.pdf",
+  "compile_returncode": 0,
+  "compile_log": "C:\\Users\\norie\\Documents\\Codex\\2026-05-02\\files-mentioned-by-the-user-classify\\figures\\pgfplots_p019\\P019_cnn_v2_aggregate_metrics.compile.log"
+}

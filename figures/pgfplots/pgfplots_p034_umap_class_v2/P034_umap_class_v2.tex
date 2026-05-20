@@ -1,0 +1,80 @@
+\documentclass[tikz,border=2pt]{standalone}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\input{../pgfplots_font_setup.tex}
+
+\definecolor{classGlioma}{HTML}{440154}
+\definecolor{classMeningioma}{HTML}{2D708E}
+\definecolor{classNoTumour}{HTML}{20A387}
+\definecolor{classPituitary}{HTML}{73D055}
+\definecolor{sourceGrey}{HTML}{4D4D4D}
+
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+  width=3.45in,
+  height=2.85in,
+  xlabel={UMAP-1},
+  ylabel={UMAP-2},
+  grid=major,
+  major grid style={draw=black!13, line width=0.28pt},
+  minor tick num=0,
+  xtick distance=4,
+  ytick distance=4,
+  tick align=outside,
+  tick pos=left,
+  axis line style={draw=black, line width=0.42pt},
+  tick style={draw=black, line width=0.42pt},
+  label style={font=\fontsize{8.4pt}{9.2pt}\selectfont\sffamily},
+  tick label style={font=\fontsize{7.2pt}{8.0pt}\selectfont\sffamily},
+  legend style={
+    at={(0.5,1.08)},
+    anchor=south,
+    draw=none,
+    fill=none,
+    legend columns=3,
+    /tikz/every even column/.append style={column sep=6pt},
+    font=\fontsize{7.0pt}{7.6pt}\selectfont\sffamily,
+    nodes={inner sep=0.8pt},
+  },
+  legend image post style={scale=1.0},
+  enlarge x limits=0.025,
+  enlarge y limits=0.025,
+]
+
+\addplot+[only marks, mark=*, mark size=0.52pt, color=classGlioma, opacity=0.55, forget plot]
+  table[x=x, y=y] {data/glioma_real.dat};
+\addplot+[only marks, mark=x, mark size=0.90pt, color=classGlioma, opacity=0.70, line width=0.30pt, forget plot]
+  table[x=x, y=y] {data/glioma_synthetic.dat};
+
+\addplot+[only marks, mark=*, mark size=0.52pt, color=classMeningioma, opacity=0.55, forget plot]
+  table[x=x, y=y] {data/meningioma_real.dat};
+\addplot+[only marks, mark=x, mark size=0.90pt, color=classMeningioma, opacity=0.70, line width=0.30pt, forget plot]
+  table[x=x, y=y] {data/meningioma_synthetic.dat};
+
+\addplot+[only marks, mark=*, mark size=0.52pt, color=classNoTumour, opacity=0.55, forget plot]
+  table[x=x, y=y] {data/no_tumor_real.dat};
+\addplot+[only marks, mark=x, mark size=0.90pt, color=classNoTumour, opacity=0.70, line width=0.30pt, forget plot]
+  table[x=x, y=y] {data/no_tumor_synthetic.dat};
+
+\addplot+[only marks, mark=*, mark size=0.52pt, color=classPituitary, opacity=0.55, forget plot]
+  table[x=x, y=y] {data/pituitary_real.dat};
+\addplot+[only marks, mark=x, mark size=0.90pt, color=classPituitary, opacity=0.70, line width=0.30pt, forget plot]
+  table[x=x, y=y] {data/pituitary_synthetic.dat};
+
+\addlegendimage{only marks, mark=*, mark size=2.75pt, color=classGlioma, mark options={fill=classGlioma, draw=classGlioma}}
+\addlegendentry{\hspace{1.5pt}Glioma}
+\addlegendimage{only marks, mark=*, mark size=2.75pt, color=classMeningioma, mark options={fill=classMeningioma, draw=classMeningioma}}
+\addlegendentry{\hspace{1.5pt}Meningioma}
+\addlegendimage{only marks, mark=*, mark size=2.75pt, color=classNoTumour, mark options={fill=classNoTumour, draw=classNoTumour}}
+\addlegendentry{\hspace{1.5pt}No tumour}
+\addlegendimage{only marks, mark=*, mark size=2.75pt, color=classPituitary, mark options={fill=classPituitary, draw=classPituitary}}
+\addlegendentry{\hspace{1.5pt}Pituitary}
+\addlegendimage{only marks, mark=*, mark size=2.75pt, color=sourceGrey, mark options={fill=sourceGrey, draw=sourceGrey}}
+\addlegendentry{\hspace{1.5pt}Real}
+\addlegendimage{only marks, mark=x, mark size=3.2pt, color=sourceGrey, line width=0.70pt}
+\addlegendentry{\hspace{1.5pt}Synthetic}
+
+\end{axis}
+\end{tikzpicture}
+\end{document}

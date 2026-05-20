@@ -1,0 +1,2 @@
+model	panel	comparison	metric	y	delta_pp	err_minus	err_plus	ci_low_pp	ci_high_pp	p_holm	p_raw	significant
+cnn_v2	tumour	augmented_r1	per_tumour_f1:no_tumor	1.76	3.37481775	1.6180041	1.80709163	1.75681364	5.18190937	0.0103979204	0.000199960008	1

@@ -1,0 +1,6 @@
+head	experiment	metric	x	mean	halfci	n
+tumour	baseline	weighted_f1	1.220000	0.943581241	0.00508000661	10
+tumour	augmented_r1	weighted_f1	2.220000	0.949125808	0.00499209305	10
+tumour	augmented_r2	weighted_f1	3.220000	0.950600795	0.00385450831	10
+tumour	filtered_r1	weighted_f1	4.220000	0.949391957	0.00564311	10
+tumour	filtered_r2	weighted_f1	5.220000	0.949674106	0.00451466512	10

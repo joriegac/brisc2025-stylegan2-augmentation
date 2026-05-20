@@ -1,0 +1,6 @@
+head	experiment	metric	x	mean	halfci	n
+plane	baseline	accuracy	0.780000	0.9783	0.00226325632	10
+plane	augmented_r1	accuracy	1.780000	0.9816	0.00117778565	10
+plane	augmented_r2	accuracy	2.780000	0.983	0.00165193123	10
+plane	filtered_r1	accuracy	3.780000	0.9824	0.00278470075	10
+plane	filtered_r2	accuracy	4.780000	0.9823	0.00252449289	10

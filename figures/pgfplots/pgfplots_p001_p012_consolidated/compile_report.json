@@ -1,0 +1,22 @@
+{
+  "code": "P001-P012",
+  "rows_by_combo": {
+    "glioma_ax": 1001,
+    "glioma_co": 1001,
+    "glioma_sa": 1001,
+    "meningioma_ax": 1001,
+    "meningioma_co": 1001,
+    "meningioma_sa": 1001,
+    "no_tumor_ax": 1001,
+    "no_tumor_co": 1001,
+    "no_tumor_sa": 1001,
+    "pituitary_ax": 1001,
+    "pituitary_co": 1001,
+    "pituitary_sa": 1001
+  },
+  "interpolation": "dense shape-preserving cubic Hermite interpolation on a 1-kimg grid, with no value smoothing or averaging",
+  "tex": "C:\\Users\\norie\\Documents\\Codex\\2026-05-02\\files-mentioned-by-the-user-classify\\figures\\pgfplots_p001_p012_consolidated\\P001_P012_stylegan2_training_consolidated.tex",
+  "pdf": "C:\\Users\\norie\\Documents\\Codex\\2026-05-02\\files-mentioned-by-the-user-classify\\figures\\pgfplots_p001_p012_consolidated\\P001_P012_stylegan2_training_consolidated.pdf",
+  "compile_returncode": 0,
+  "compile_log": "C:\\Users\\norie\\Documents\\Codex\\2026-05-02\\files-mentioned-by-the-user-classify\\figures\\pgfplots_p001_p012_consolidated\\P001_P012_stylegan2_training_consolidated.compile.log"
+}

@@ -1,0 +1,6 @@
+head	experiment	metric	x	mean	halfci	n
+tumour	baseline	accuracy	0.780000	0.9438	0.00501055551	10
+tumour	augmented_r1	accuracy	1.780000	0.9495	0.0049125863	10
+tumour	augmented_r2	accuracy	2.780000	0.951	0.00378504996	10
+tumour	filtered_r1	accuracy	3.780000	0.9497	0.00556174034	10
+tumour	filtered_r2	accuracy	4.780000	0.9501	0.00447916618	10

@@ -1,0 +1,38 @@
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{sourcesanspro}
+  \renewcommand{\familydefault}{\sfdefault}
+  \usepackage[italic]{mathastext}
+\else
+  \usepackage{fontspec}
+  \setmainfont{Source Sans Pro}
+  \setsansfont{Source Sans Pro}
+  \setmonofont[
+    Path={../../../arXiv/fonts/ubuntu-mono/},
+    UprightFont={UbuntuMono-Regular.ttf},
+    BoldFont={UbuntuMono-Bold.ttf},
+    ItalicFont={UbuntuMono-Italic.ttf},
+    BoldItalicFont={UbuntuMono-BoldItalic.ttf}
+  ]{UbuntuMono}
+  \renewcommand{\familydefault}{\sfdefault}
+  \usepackage[italic]{mathastext}
+\fi
+\newcommand{\pgfplotlegendfont}{\fontsize{6.1pt}{6.8pt}\selectfont\sffamily}
+\AtBeginDocument{%
+  \pgfplotsset{
+    every axis/.append style={
+      tick label style={font=\scriptsize\sffamily, /pgf/number format/assume math mode=true},
+      label style={font=\scriptsize\sffamily},
+      title style={font=\scriptsize\sffamily\bfseries},
+      legend style={
+        font=\pgfplotlegendfont,
+        inner xsep=1pt,
+        inner ysep=0pt,
+        row sep=0pt,
+        nodes={inner sep=1pt}
+      },
+      legend image post style={xscale=0.54}
+    }
+  }
+}

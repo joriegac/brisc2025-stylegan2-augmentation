@@ -1,0 +1,24 @@
+{
+  "train_rows": 4896,
+  "test_rows": 1000,
+  "exact_filepath_overlap": 0,
+  "basename_overlap": 0,
+  "file_sha256_overlap": 0,
+  "file_sha256_overlap_pairs": 0,
+  "pixel_hash_candidate_pairs": 0,
+  "pixel_exact_overlap_pairs": 0,
+  "pixel_exact_overlap_unique_train_rows": 0,
+  "pixel_exact_overlap_unique_test_rows": 0,
+  "pixel_exact_overlap_identities": 0,
+  "phash_warning_threshold": 6,
+  "phash_close_neighbors": 356,
+  "min_phash_distance": 0,
+  "feature_warning_threshold": 0.01,
+  "feature_check": {
+    "skipped": false
+  },
+  "feature_close_neighbors": 5,
+  "min_feature_cosine_distance": 0.0006582140922546387,
+  "patient_identifier_columns_found": [],
+  "patient_level_independence_claim_supported": false
+}

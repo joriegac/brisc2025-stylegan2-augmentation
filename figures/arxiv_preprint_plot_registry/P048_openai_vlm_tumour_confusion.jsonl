@@ -1,0 +1,17 @@
+{"arxiv_role": "Optional VLM diagnostic figure.", "code": "P048", "current_or_expected_figure_outputs": [], "data_status": "available", "family": "OpenAI VLM audit", "notes": "", "plot_type": "confusion matrix", "record_type": "plot_metadata", "slug": "openai_vlm_tumour_confusion", "source_paths": ["C:\\Users\\norie\\Documents\\Codex\\2026-05-02\\files-mentioned-by-the-user-classify\\vlm_realism_train_augmented_r2_balanced6000_gpt54mini\\analysis_openai_vlm\\responses_openai_joined.csv"], "title": "OpenAI VLM tumour-class confusion matrix"}
+{"code": "P048", "n": 297, "predicted_label": "glioma", "record_type": "data", "true_label": "glioma"}
+{"code": "P048", "n": 180, "predicted_label": "meningioma", "record_type": "data", "true_label": "glioma"}
+{"code": "P048", "n": 458, "predicted_label": "no_tumor", "record_type": "data", "true_label": "glioma"}
+{"code": "P048", "n": 396, "predicted_label": "pituitary", "record_type": "data", "true_label": "glioma"}
+{"code": "P048", "n": 145, "predicted_label": "glioma", "record_type": "data", "true_label": "meningioma"}
+{"code": "P048", "n": 520, "predicted_label": "meningioma", "record_type": "data", "true_label": "meningioma"}
+{"code": "P048", "n": 445, "predicted_label": "no_tumor", "record_type": "data", "true_label": "meningioma"}
+{"code": "P048", "n": 340, "predicted_label": "pituitary", "record_type": "data", "true_label": "meningioma"}
+{"code": "P048", "n": 93, "predicted_label": "glioma", "record_type": "data", "true_label": "no_tumor"}
+{"code": "P048", "n": 40, "predicted_label": "meningioma", "record_type": "data", "true_label": "no_tumor"}
+{"code": "P048", "n": 1032, "predicted_label": "no_tumor", "record_type": "data", "true_label": "no_tumor"}
+{"code": "P048", "n": 77, "predicted_label": "pituitary", "record_type": "data", "true_label": "no_tumor"}
+{"code": "P048", "n": 9, "predicted_label": "glioma", "record_type": "data", "true_label": "pituitary"}
+{"code": "P048", "n": 13, "predicted_label": "meningioma", "record_type": "data", "true_label": "pituitary"}
+{"code": "P048", "n": 900, "predicted_label": "no_tumor", "record_type": "data", "true_label": "pituitary"}
+{"code": "P048", "n": 829, "predicted_label": "pituitary", "record_type": "data", "true_label": "pituitary"}

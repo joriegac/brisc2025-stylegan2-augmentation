@@ -1,0 +1,213 @@
+﻿\documentclass[tikz,border=2pt]{standalone}
+\input{C:/Users/norie/OneDrive/RA1/figures/pgfplots/pgfplots_font_setup.tex}
+\usepackage{pgfplots}
+\usepgfplotslibrary{groupplots}
+\pgfplotsset{compat=1.18}
+
+% --- Colour palette ---
+% Metric colours: one hue per role, used across Loss and Sign-rate panels
+%   metricG  = generator / fake / negative-sign  (Viridis 0.00)
+%   metricD  = discriminator / real / positive-sign  (Viridis 0.65)
+\definecolor{metricG}{HTML}{440154}
+\definecolor{metricD}{HTML}{35B779}
+
+% Tumour-class colours: perceptually spaced Viridis stops, used in ADA panel
+\definecolor{classGlioma}{HTML}{440154}      % deep purple  (Viridis 0.00)
+\definecolor{classMeningioma}{HTML}{2D708E}  % steel blue   (Viridis 0.33)
+\definecolor{classNoTumour}{HTML}{20A387}    % teal         (Viridis 0.55)
+\definecolor{classPituitary}{HTML}{73D055}   % lime green   (Viridis 0.80)
+
+\pgfplotsset{
+  every axis/.append style={
+    width=90mm,
+    height=38mm,
+    scale only axis,
+    xmin=0,
+    xmax=1000,
+    xtick distance=200,
+    scaled x ticks=false,
+    xticklabel style={/pgf/number format/1000 sep={,}},
+    axis line style={black, line width=0.35pt},
+    tick style={black, line width=0.35pt},
+    tick label style={font=\scriptsize\sffamily, /pgf/number format/assume math mode=true, /pgf/number format/fixed},
+    label style={font=\scriptsize\sffamily},
+    legend style={
+      font=\pgfplotlegendfont,
+      draw=none,
+      fill=none,
+      cells={anchor=west},
+      /tikz/every even column/.append style={column sep=3pt}
+    },
+    grid=both,
+    major grid style={black!10, line width=0.25pt},
+    minor grid style={black!5,  line width=0.2pt},
+    minor tick num=1,
+    unbounded coords=discard,
+  },
+  every axis plot/.append style={line width=0.62pt, mark=none},
+}
+
+\begin{document}
+\begin{tikzpicture}
+\begin{groupplot}[
+  group style={group size=1 by 3, vertical sep=8mm},
+]
+
+%% ---- (a) Generator / Discriminator Loss ----------------------------------------
+\nextgroupplot[
+  ylabel={Loss},
+  ymin=0, ymax=11,
+  ytick={0,5,10},
+  xticklabels={},
+  legend columns=2,
+  legend style={
+    at={(0.985,0.985)}, anchor=north east,
+    font=\pgfplotlegendfont, draw=none, fill=white,
+    fill opacity=0.86, text opacity=1,
+    cells={anchor=west},
+    /tikz/every even column/.append style={column sep=3pt},
+    row sep=0pt
+  },
+  after end axis/.code={
+    \node[anchor=south east, font=\scriptsize\sffamily\bfseries, yshift=2pt]
+      at (current axis.north east) {(a)};
+  },
+]
+% G loss â€” 4 classes Ã— 3 planes, single metricG colour
+\addplot[metricG, solid,          forget plot] table[x=kimg, y=g_loss] {data/glioma_ax.dat};
+\addplot[metricG, densely dashed, forget plot] table[x=kimg, y=g_loss] {data/glioma_co.dat};
+\addplot[metricG, densely dotted, forget plot] table[x=kimg, y=g_loss] {data/glioma_sa.dat};
+\addplot[metricG, solid,          forget plot] table[x=kimg, y=g_loss] {data/meningioma_ax.dat};
+\addplot[metricG, densely dashed, forget plot] table[x=kimg, y=g_loss] {data/meningioma_co.dat};
+\addplot[metricG, densely dotted, forget plot] table[x=kimg, y=g_loss] {data/meningioma_sa.dat};
+\addplot[metricG, solid,          forget plot] table[x=kimg, y=g_loss] {data/no_tumor_ax.dat};
+\addplot[metricG, densely dashed, forget plot] table[x=kimg, y=g_loss] {data/no_tumor_co.dat};
+\addplot[metricG, densely dotted, forget plot] table[x=kimg, y=g_loss] {data/no_tumor_sa.dat};
+\addplot[metricG, solid,          forget plot] table[x=kimg, y=g_loss] {data/pituitary_ax.dat};
+\addplot[metricG, densely dashed, forget plot] table[x=kimg, y=g_loss] {data/pituitary_co.dat};
+\addplot[metricG, densely dotted, forget plot] table[x=kimg, y=g_loss] {data/pituitary_sa.dat};
+% D loss â€” 4 classes Ã— 3 planes, single metricD colour
+\addplot[metricD, solid,          forget plot] table[x=kimg, y=d_loss] {data/glioma_ax.dat};
+\addplot[metricD, densely dashed, forget plot] table[x=kimg, y=d_loss] {data/glioma_co.dat};
+\addplot[metricD, densely dotted, forget plot] table[x=kimg, y=d_loss] {data/glioma_sa.dat};
+\addplot[metricD, solid,          forget plot] table[x=kimg, y=d_loss] {data/meningioma_ax.dat};
+\addplot[metricD, densely dashed, forget plot] table[x=kimg, y=d_loss] {data/meningioma_co.dat};
+\addplot[metricD, densely dotted, forget plot] table[x=kimg, y=d_loss] {data/meningioma_sa.dat};
+\addplot[metricD, solid,          forget plot] table[x=kimg, y=d_loss] {data/no_tumor_ax.dat};
+\addplot[metricD, densely dashed, forget plot] table[x=kimg, y=d_loss] {data/no_tumor_co.dat};
+\addplot[metricD, densely dotted, forget plot] table[x=kimg, y=d_loss] {data/no_tumor_sa.dat};
+\addplot[metricD, solid,          forget plot] table[x=kimg, y=d_loss] {data/pituitary_ax.dat};
+\addplot[metricD, densely dashed, forget plot] table[x=kimg, y=d_loss] {data/pituitary_co.dat};
+\addplot[metricD, densely dotted, forget plot] table[x=kimg, y=d_loss] {data/pituitary_sa.dat};
+% Legend: colour = metric (G/D), line style = plane
+\addlegendimage{metricG, solid,          line width=0.9pt} \addlegendentry{$G$ --- Axial}
+\addlegendimage{metricD, solid,          line width=0.9pt} \addlegendentry{$D$ --- Axial}
+\addlegendimage{metricG, densely dashed, line width=0.9pt} \addlegendentry{$G$ --- Coronal}
+\addlegendimage{metricD, densely dashed, line width=0.9pt} \addlegendentry{$D$ --- Coronal}
+\addlegendimage{metricG, densely dotted, line width=0.9pt} \addlegendentry{$G$ --- Sagittal}
+\addlegendimage{metricD, densely dotted, line width=0.9pt} \addlegendentry{$D$ --- Sagittal}
+
+
+%% ---- (b) Discriminator Sign Rate -----------------------------------------------
+\nextgroupplot[
+  ylabel={Sign rate},
+  ymin=0.375, ymax=1,
+  ytick={0.5,0.75,1},
+  xticklabels={},
+  legend columns=2,
+  legend style={
+    at={(0.015,0.035)}, anchor=south west,
+    font=\pgfplotlegendfont, draw=none, fill=white,
+    fill opacity=0.86, text opacity=1,
+    cells={anchor=west},
+    /tikz/every even column/.append style={column sep=3pt},
+    row sep=0pt
+  },
+  after end axis/.code={
+    \node[anchor=south east, font=\scriptsize\sffamily\bfseries, yshift=2pt]
+      at (current axis.north east) {(b)};
+  },
+]
+% Fake sign proxy / negative fraction â€” metricG
+\addplot[metricG, solid,          forget plot] table[x=kimg, y=fake_sign_proxy] {data/glioma_ax.dat};
+\addplot[metricG, densely dashed, forget plot] table[x=kimg, y=fake_sign_proxy] {data/glioma_co.dat};
+\addplot[metricG, densely dotted, forget plot] table[x=kimg, y=fake_sign_proxy] {data/glioma_sa.dat};
+\addplot[metricG, solid,          forget plot] table[x=kimg, y=fake_sign_proxy] {data/meningioma_ax.dat};
+\addplot[metricG, densely dashed, forget plot] table[x=kimg, y=fake_sign_proxy] {data/meningioma_co.dat};
+\addplot[metricG, densely dotted, forget plot] table[x=kimg, y=fake_sign_proxy] {data/meningioma_sa.dat};
+\addplot[metricG, solid,          forget plot] table[x=kimg, y=fake_sign_proxy] {data/no_tumor_ax.dat};
+\addplot[metricG, densely dashed, forget plot] table[x=kimg, y=fake_sign_proxy] {data/no_tumor_co.dat};
+\addplot[metricG, densely dotted, forget plot] table[x=kimg, y=fake_sign_proxy] {data/no_tumor_sa.dat};
+\addplot[metricG, solid,          forget plot] table[x=kimg, y=fake_sign_proxy] {data/pituitary_ax.dat};
+\addplot[metricG, densely dashed, forget plot] table[x=kimg, y=fake_sign_proxy] {data/pituitary_co.dat};
+\addplot[metricG, densely dotted, forget plot] table[x=kimg, y=fake_sign_proxy] {data/pituitary_sa.dat};
+% Real sign proxy / positive fraction â€” metricD
+\addplot[metricD, solid,          forget plot] table[x=kimg, y=real_sign_proxy] {data/glioma_ax.dat};
+\addplot[metricD, densely dashed, forget plot] table[x=kimg, y=real_sign_proxy] {data/glioma_co.dat};
+\addplot[metricD, densely dotted, forget plot] table[x=kimg, y=real_sign_proxy] {data/glioma_sa.dat};
+\addplot[metricD, solid,          forget plot] table[x=kimg, y=real_sign_proxy] {data/meningioma_ax.dat};
+\addplot[metricD, densely dashed, forget plot] table[x=kimg, y=real_sign_proxy] {data/meningioma_co.dat};
+\addplot[metricD, densely dotted, forget plot] table[x=kimg, y=real_sign_proxy] {data/meningioma_sa.dat};
+\addplot[metricD, solid,          forget plot] table[x=kimg, y=real_sign_proxy] {data/no_tumor_ax.dat};
+\addplot[metricD, densely dashed, forget plot] table[x=kimg, y=real_sign_proxy] {data/no_tumor_co.dat};
+\addplot[metricD, densely dotted, forget plot] table[x=kimg, y=real_sign_proxy] {data/no_tumor_sa.dat};
+\addplot[metricD, solid,          forget plot] table[x=kimg, y=real_sign_proxy] {data/pituitary_ax.dat};
+\addplot[metricD, densely dashed, forget plot] table[x=kimg, y=real_sign_proxy] {data/pituitary_co.dat};
+\addplot[metricD, densely dotted, forget plot] table[x=kimg, y=real_sign_proxy] {data/pituitary_sa.dat};
+% Legend: colour = sign direction, line style = plane
+\addlegendimage{metricG, solid,          line width=0.9pt} \addlegendentry{Neg.\ (fake) --- Axial}
+\addlegendimage{metricD, solid,          line width=0.9pt} \addlegendentry{Pos.\ (real) --- Axial}
+\addlegendimage{metricG, densely dashed, line width=0.9pt} \addlegendentry{Neg.\ (fake) --- Coronal}
+\addlegendimage{metricD, densely dashed, line width=0.9pt} \addlegendentry{Pos.\ (real) --- Coronal}
+\addlegendimage{metricG, densely dotted, line width=0.9pt} \addlegendentry{Neg.\ (fake) --- Sagittal}
+\addlegendimage{metricD, densely dotted, line width=0.9pt} \addlegendentry{Pos.\ (real) --- Sagittal}
+
+
+%% ---- (c) ADA Augmentation Probability ------------------------------------------
+\nextgroupplot[
+  xlabel={Training progress (kimg)},
+  ylabel={ADA probability},
+  ymin=0, ymax=1.65,
+  ytick={0,0.5,1,1.5},
+  legend columns=2,
+  legend style={
+    at={(0.015,0.985)}, anchor=north west,
+    font=\pgfplotlegendfont, draw=none, fill=white,
+    fill opacity=0.86, text opacity=1,
+    cells={anchor=west},
+    /tikz/every even column/.append style={column sep=3pt},
+    row sep=0pt
+  },
+  after end axis/.code={
+    \node[anchor=south east, font=\scriptsize\sffamily\bfseries, yshift=2pt]
+      at (current axis.north east) {(c)};
+  },
+]
+% ADA probability â€” 4 classes Ã— 3 planes
+\addplot[classGlioma,     solid,          forget plot] table[x=kimg, y=ada_p] {data/glioma_ax.dat};
+\addplot[classGlioma,     densely dashed, forget plot] table[x=kimg, y=ada_p] {data/glioma_co.dat};
+\addplot[classGlioma,     densely dotted, forget plot] table[x=kimg, y=ada_p] {data/glioma_sa.dat};
+\addplot[classMeningioma, solid,          forget plot] table[x=kimg, y=ada_p] {data/meningioma_ax.dat};
+\addplot[classMeningioma, densely dashed, forget plot] table[x=kimg, y=ada_p] {data/meningioma_co.dat};
+\addplot[classMeningioma, densely dotted, forget plot] table[x=kimg, y=ada_p] {data/meningioma_sa.dat};
+\addplot[classNoTumour,   solid,          forget plot] table[x=kimg, y=ada_p] {data/no_tumor_ax.dat};
+\addplot[classNoTumour,   densely dashed, forget plot] table[x=kimg, y=ada_p] {data/no_tumor_co.dat};
+\addplot[classNoTumour,   densely dotted, forget plot] table[x=kimg, y=ada_p] {data/no_tumor_sa.dat};
+\addplot[classPituitary,  solid,          forget plot] table[x=kimg, y=ada_p] {data/pituitary_ax.dat};
+\addplot[classPituitary,  densely dashed, forget plot] table[x=kimg, y=ada_p] {data/pituitary_co.dat};
+\addplot[classPituitary,  densely dotted, forget plot] table[x=kimg, y=ada_p] {data/pituitary_sa.dat};
+% ADA target reference line at p = 0.6
+\addplot[black!35, dashed, line width=0.45pt, forget plot] coordinates {(0,0.6)(1000,0.6)};
+\node[anchor=south west, font=\tiny\sffamily, black!45] at (axis cs:5,0.625) {target p=0.6};
+% Legend: tumour classes (colour encoding) then planes (line-style encoding)
+\addlegendimage{classGlioma,     solid, line width=0.9pt} \addlegendentry{Glioma}
+\addlegendimage{classMeningioma, solid, line width=0.9pt} \addlegendentry{Meningioma}
+\addlegendimage{classNoTumour,   solid, line width=0.9pt} \addlegendentry{No tumour}
+\addlegendimage{classPituitary,  solid, line width=0.9pt} \addlegendentry{Pituitary}
+\addlegendimage{black!60, solid,          line width=0.9pt} \addlegendentry{Axial}
+\addlegendimage{black!60, densely dashed, line width=0.9pt} \addlegendentry{Coronal}
+\addlegendimage{black!60, densely dotted, line width=0.9pt} \addlegendentry{Sagittal}
+
+\end{groupplot}
+\end{tikzpicture}
+\end{document}

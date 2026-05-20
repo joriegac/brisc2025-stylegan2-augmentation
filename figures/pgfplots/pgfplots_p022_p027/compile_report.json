@@ -1,0 +1,39 @@
+{
+  "code": "P022_P027",
+  "source_jsonl": [
+    "C:\\Users\\norie\\Documents\\Codex\\2026-05-02\\files-mentioned-by-the-user-classify\\figures\\arxiv_preprint_plot_registry\\P022_cnn_v2_paired_deltas.jsonl",
+    "C:\\Users\\norie\\Documents\\Codex\\2026-05-02\\files-mentioned-by-the-user-classify\\figures\\arxiv_preprint_plot_registry\\P027_mobilevitv2_paired_deltas.jsonl"
+  ],
+  "rows": 104,
+  "effect_scale": "mean paired delta and bootstrap 95% CI in percentage points; condition minus baseline",
+  "significance_encoding": "filled marker indicates Holm-adjusted p <= 0.05; open marker otherwise",
+  "significant_rows": 20,
+  "models": [
+    "CNN v2",
+    "MobileViTV2"
+  ],
+  "panels": [
+    "Tumour metric",
+    "MRI-plane metric"
+  ],
+  "comparisons": [
+    "Aug. 1x",
+    "Aug. 2x",
+    "Filt. 1x",
+    "Filt. 2x"
+  ],
+  "x_axis_ranges_pp": {
+    "tumour": [
+      -3.0,
+      7.0
+    ],
+    "plane": [
+      -0.2,
+      1.5
+    ]
+  },
+  "tex": "C:\\Users\\norie\\Documents\\Codex\\2026-05-02\\files-mentioned-by-the-user-classify\\figures\\pgfplots_p022_p027\\P022_P027_cnn_mobilevitv2_paired_deltas.tex",
+  "pdf": "C:\\Users\\norie\\Documents\\Codex\\2026-05-02\\files-mentioned-by-the-user-classify\\figures\\pgfplots_p022_p027\\P022_P027_cnn_mobilevitv2_paired_deltas.pdf",
+  "compile_returncode": 0,
+  "compile_log": "C:\\Users\\norie\\Documents\\Codex\\2026-05-02\\files-mentioned-by-the-user-classify\\figures\\pgfplots_p022_p027\\P022_P027_cnn_mobilevitv2_paired_deltas.compile.log"
+}

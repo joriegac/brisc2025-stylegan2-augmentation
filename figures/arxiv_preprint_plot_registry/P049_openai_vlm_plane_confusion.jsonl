@@ -1,0 +1,9 @@
+{"arxiv_role": "Optional VLM diagnostic figure.", "code": "P049", "current_or_expected_figure_outputs": [], "data_status": "available", "family": "OpenAI VLM audit", "notes": "", "plot_type": "confusion matrix", "record_type": "plot_metadata", "slug": "openai_vlm_plane_confusion", "source_paths": ["C:\\Users\\norie\\Documents\\Codex\\2026-05-02\\files-mentioned-by-the-user-classify\\vlm_realism_train_augmented_r2_balanced6000_gpt54mini\\analysis_openai_vlm\\responses_openai_joined.csv"], "title": "OpenAI VLM MRI-plane confusion matrix"}
+{"code": "P049", "n": 1827, "predicted_label": "ax", "record_type": "data", "true_label": "ax"}
+{"code": "P049", "n": 2, "predicted_label": "co", "record_type": "data", "true_label": "ax"}
+{"code": "P049", "n": 307, "predicted_label": "ax", "record_type": "data", "true_label": "co"}
+{"code": "P049", "n": 1650, "predicted_label": "co", "record_type": "data", "true_label": "co"}
+{"code": "P049", "n": 11, "predicted_label": "sa", "record_type": "data", "true_label": "co"}
+{"code": "P049", "n": 139, "predicted_label": "ax", "record_type": "data", "true_label": "sa"}
+{"code": "P049", "n": 60, "predicted_label": "co", "record_type": "data", "true_label": "sa"}
+{"code": "P049", "n": 1778, "predicted_label": "sa", "record_type": "data", "true_label": "sa"}

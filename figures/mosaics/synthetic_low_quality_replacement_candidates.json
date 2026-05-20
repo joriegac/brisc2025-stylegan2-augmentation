@@ -1,0 +1,732 @@
+{
+  "glioma_sa": [
+    {
+      "rank": 1,
+      "score": 4.604167740980537,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_sa\\synthetic_v2\\brisc2025_synth_00179_gl_sa_t1.png",
+      "name": "brisc2025_synth_00179_gl_sa_t1.png"
+    },
+    {
+      "rank": 2,
+      "score": 4.477060588470715,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_sa\\synthetic_v2\\brisc2025_synth_00585_gl_sa_t1.png",
+      "name": "brisc2025_synth_00585_gl_sa_t1.png"
+    },
+    {
+      "rank": 3,
+      "score": 4.427445035838949,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_sa\\synthetic_v2\\brisc2025_synth_00207_gl_sa_t1.png",
+      "name": "brisc2025_synth_00207_gl_sa_t1.png"
+    },
+    {
+      "rank": 4,
+      "score": 4.390713975579086,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_sa\\synthetic_v2\\brisc2025_synth_00097_gl_sa_t1.png",
+      "name": "brisc2025_synth_00097_gl_sa_t1.png"
+    },
+    {
+      "rank": 5,
+      "score": 4.353245564014531,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_sa\\synthetic_v2\\brisc2025_synth_00269_gl_sa_t1.png",
+      "name": "brisc2025_synth_00269_gl_sa_t1.png"
+    },
+    {
+      "rank": 6,
+      "score": 4.337687297627629,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_sa\\synthetic_v2\\brisc2025_synth_00007_gl_sa_t1.png",
+      "name": "brisc2025_synth_00007_gl_sa_t1.png"
+    },
+    {
+      "rank": 7,
+      "score": 4.334161800761169,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_sa\\synthetic_v2\\brisc2025_synth_00373_gl_sa_t1.png",
+      "name": "brisc2025_synth_00373_gl_sa_t1.png"
+    },
+    {
+      "rank": 8,
+      "score": 4.292198415387889,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_sa\\synthetic_v2\\brisc2025_synth_00489_gl_sa_t1.png",
+      "name": "brisc2025_synth_00489_gl_sa_t1.png"
+    },
+    {
+      "rank": 9,
+      "score": 4.287026921748685,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_sa\\synthetic_v2\\brisc2025_synth_00091_gl_sa_t1.png",
+      "name": "brisc2025_synth_00091_gl_sa_t1.png"
+    },
+    {
+      "rank": 10,
+      "score": 4.28520394856477,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_sa\\synthetic_v2\\brisc2025_synth_00407_gl_sa_t1.png",
+      "name": "brisc2025_synth_00407_gl_sa_t1.png"
+    },
+    {
+      "rank": 11,
+      "score": 4.271825532625572,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_sa\\synthetic_v2\\brisc2025_synth_00279_gl_sa_t1.png",
+      "name": "brisc2025_synth_00279_gl_sa_t1.png"
+    },
+    {
+      "rank": 12,
+      "score": 4.24865526199745,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_sa\\synthetic_v2\\brisc2025_synth_00425_gl_sa_t1.png",
+      "name": "brisc2025_synth_00425_gl_sa_t1.png"
+    },
+    {
+      "rank": 13,
+      "score": 4.238098955871991,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_sa\\synthetic_v2\\brisc2025_synth_00345_gl_sa_t1.png",
+      "name": "brisc2025_synth_00345_gl_sa_t1.png"
+    },
+    {
+      "rank": 14,
+      "score": 4.224510631057548,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_sa\\synthetic_v2\\brisc2025_synth_00205_gl_sa_t1.png",
+      "name": "brisc2025_synth_00205_gl_sa_t1.png"
+    },
+    {
+      "rank": 15,
+      "score": 4.211448954603024,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_sa\\synthetic_v2\\brisc2025_synth_00229_gl_sa_t1.png",
+      "name": "brisc2025_synth_00229_gl_sa_t1.png"
+    },
+    {
+      "rank": 16,
+      "score": 4.190414206531951,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_sa\\synthetic_v2\\brisc2025_synth_00381_gl_sa_t1.png",
+      "name": "brisc2025_synth_00381_gl_sa_t1.png"
+    },
+    {
+      "rank": 17,
+      "score": 4.178962296282704,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_sa\\synthetic_v2\\brisc2025_synth_00001_gl_sa_t1.png",
+      "name": "brisc2025_synth_00001_gl_sa_t1.png"
+    },
+    {
+      "rank": 18,
+      "score": 4.173599632768945,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_sa\\synthetic_v2\\brisc2025_synth_00103_gl_sa_t1.png",
+      "name": "brisc2025_synth_00103_gl_sa_t1.png"
+    },
+    {
+      "rank": 19,
+      "score": 4.169847168008507,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_sa\\synthetic_v2\\brisc2025_synth_00063_gl_sa_t1.png",
+      "name": "brisc2025_synth_00063_gl_sa_t1.png"
+    },
+    {
+      "rank": 20,
+      "score": 4.163921704880272,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_sa\\synthetic_v2\\brisc2025_synth_00347_gl_sa_t1.png",
+      "name": "brisc2025_synth_00347_gl_sa_t1.png"
+    },
+    {
+      "rank": 21,
+      "score": 4.146132797940533,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_sa\\synthetic_v2\\brisc2025_synth_00173_gl_sa_t1.png",
+      "name": "brisc2025_synth_00173_gl_sa_t1.png"
+    },
+    {
+      "rank": 22,
+      "score": 4.142767939282568,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_sa\\synthetic_v2\\brisc2025_synth_00405_gl_sa_t1.png",
+      "name": "brisc2025_synth_00405_gl_sa_t1.png"
+    },
+    {
+      "rank": 23,
+      "score": 4.131084180040218,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_sa\\synthetic_v2\\brisc2025_synth_00181_gl_sa_t1.png",
+      "name": "brisc2025_synth_00181_gl_sa_t1.png"
+    },
+    {
+      "rank": 24,
+      "score": 4.089130493004682,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_sa\\synthetic_v2\\brisc2025_synth_00111_gl_sa_t1.png",
+      "name": "brisc2025_synth_00111_gl_sa_t1.png"
+    }
+  ],
+  "meningioma_co": [
+    {
+      "rank": 1,
+      "score": 4.502709945285787,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\meningioma_co\\synthetic_v2\\brisc2025_synth_00505_me_co_t1.png",
+      "name": "brisc2025_synth_00505_me_co_t1.png"
+    },
+    {
+      "rank": 2,
+      "score": 4.316751327229727,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\meningioma_co\\synthetic_v2\\brisc2025_synth_00724_me_co_t1.png",
+      "name": "brisc2025_synth_00724_me_co_t1.png"
+    },
+    {
+      "rank": 3,
+      "score": 4.217679624219604,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\meningioma_co\\synthetic_v2\\brisc2025_synth_00490_me_co_t1.png",
+      "name": "brisc2025_synth_00490_me_co_t1.png"
+    },
+    {
+      "rank": 4,
+      "score": 4.215346985567552,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\meningioma_co\\synthetic_v2\\brisc2025_synth_00235_me_co_t1.png",
+      "name": "brisc2025_synth_00235_me_co_t1.png"
+    },
+    {
+      "rank": 5,
+      "score": 4.214793935293803,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\meningioma_co\\synthetic_v2\\brisc2025_synth_00172_me_co_t1.png",
+      "name": "brisc2025_synth_00172_me_co_t1.png"
+    },
+    {
+      "rank": 6,
+      "score": 4.210721007115352,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\meningioma_co\\synthetic_v2\\brisc2025_synth_00652_me_co_t1.png",
+      "name": "brisc2025_synth_00652_me_co_t1.png"
+    },
+    {
+      "rank": 7,
+      "score": 4.201100808387748,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\meningioma_co\\synthetic_v2\\brisc2025_synth_00253_me_co_t1.png",
+      "name": "brisc2025_synth_00253_me_co_t1.png"
+    },
+    {
+      "rank": 8,
+      "score": 4.171533866114107,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\meningioma_co\\synthetic_v2\\brisc2025_synth_00748_me_co_t1.png",
+      "name": "brisc2025_synth_00748_me_co_t1.png"
+    },
+    {
+      "rank": 9,
+      "score": 4.109449577111256,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\meningioma_co\\synthetic_v2\\brisc2025_synth_00550_me_co_t1.png",
+      "name": "brisc2025_synth_00550_me_co_t1.png"
+    },
+    {
+      "rank": 10,
+      "score": 4.1044607980865315,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\meningioma_co\\synthetic_v2\\brisc2025_synth_00460_me_co_t1.png",
+      "name": "brisc2025_synth_00460_me_co_t1.png"
+    },
+    {
+      "rank": 11,
+      "score": 4.094887885169161,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\meningioma_co\\synthetic_v2\\brisc2025_synth_00331_me_co_t1.png",
+      "name": "brisc2025_synth_00331_me_co_t1.png"
+    },
+    {
+      "rank": 12,
+      "score": 4.093279752628929,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\meningioma_co\\synthetic_v2\\brisc2025_synth_00835_me_co_t1.png",
+      "name": "brisc2025_synth_00835_me_co_t1.png"
+    },
+    {
+      "rank": 13,
+      "score": 4.081255388337785,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\meningioma_co\\synthetic_v2\\brisc2025_synth_00727_me_co_t1.png",
+      "name": "brisc2025_synth_00727_me_co_t1.png"
+    },
+    {
+      "rank": 14,
+      "score": 4.051769366640259,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\meningioma_co\\synthetic_v2\\brisc2025_synth_00811_me_co_t1.png",
+      "name": "brisc2025_synth_00811_me_co_t1.png"
+    },
+    {
+      "rank": 15,
+      "score": 4.051018814336061,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\meningioma_co\\synthetic_v2\\brisc2025_synth_00616_me_co_t1.png",
+      "name": "brisc2025_synth_00616_me_co_t1.png"
+    },
+    {
+      "rank": 16,
+      "score": 4.050160840935435,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\meningioma_co\\synthetic_v2\\brisc2025_synth_00016_me_co_t1.png",
+      "name": "brisc2025_synth_00016_me_co_t1.png"
+    },
+    {
+      "rank": 17,
+      "score": 4.036828614376232,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\meningioma_co\\synthetic_v2\\brisc2025_synth_00310_me_co_t1.png",
+      "name": "brisc2025_synth_00310_me_co_t1.png"
+    },
+    {
+      "rank": 18,
+      "score": 4.0308382617090475,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\meningioma_co\\synthetic_v2\\brisc2025_synth_00775_me_co_t1.png",
+      "name": "brisc2025_synth_00775_me_co_t1.png"
+    },
+    {
+      "rank": 19,
+      "score": 4.023801451345254,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\meningioma_co\\synthetic_v2\\brisc2025_synth_00424_me_co_t1.png",
+      "name": "brisc2025_synth_00424_me_co_t1.png"
+    },
+    {
+      "rank": 20,
+      "score": 4.009902018911823,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\meningioma_co\\synthetic_v2\\brisc2025_synth_00109_me_co_t1.png",
+      "name": "brisc2025_synth_00109_me_co_t1.png"
+    },
+    {
+      "rank": 21,
+      "score": 4.007137722414029,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\meningioma_co\\synthetic_v2\\brisc2025_synth_00583_me_co_t1.png",
+      "name": "brisc2025_synth_00583_me_co_t1.png"
+    },
+    {
+      "rank": 22,
+      "score": 4.000248110863447,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\meningioma_co\\synthetic_v2\\brisc2025_synth_00718_me_co_t1.png",
+      "name": "brisc2025_synth_00718_me_co_t1.png"
+    },
+    {
+      "rank": 23,
+      "score": 3.9998620899120367,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\meningioma_co\\synthetic_v2\\brisc2025_synth_00043_me_co_t1.png",
+      "name": "brisc2025_synth_00043_me_co_t1.png"
+    },
+    {
+      "rank": 24,
+      "score": 3.9965439829000133,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\meningioma_co\\synthetic_v2\\brisc2025_synth_00787_me_co_t1.png",
+      "name": "brisc2025_synth_00787_me_co_t1.png"
+    }
+  ],
+  "pituitary_sa": [
+    {
+      "rank": 1,
+      "score": 3.8153003997471684,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_sa\\synthetic_v2\\brisc2025_synth_01037_pi_sa_t1.png",
+      "name": "brisc2025_synth_01037_pi_sa_t1.png"
+    },
+    {
+      "rank": 2,
+      "score": 3.8073818293805037,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_sa\\synthetic_v2\\brisc2025_synth_01025_pi_sa_t1.png",
+      "name": "brisc2025_synth_01025_pi_sa_t1.png"
+    },
+    {
+      "rank": 3,
+      "score": 3.7538836599534386,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_sa\\synthetic_v2\\brisc2025_synth_00965_pi_sa_t1.png",
+      "name": "brisc2025_synth_00965_pi_sa_t1.png"
+    },
+    {
+      "rank": 4,
+      "score": 3.714632847883648,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_sa\\synthetic_v2\\brisc2025_synth_00133_pi_sa_t1.png",
+      "name": "brisc2025_synth_00133_pi_sa_t1.png"
+    },
+    {
+      "rank": 5,
+      "score": 3.6969390063252034,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_sa\\synthetic_v2\\brisc2025_synth_01053_pi_sa_t1.png",
+      "name": "brisc2025_synth_01053_pi_sa_t1.png"
+    },
+    {
+      "rank": 6,
+      "score": 3.6889658388773006,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_sa\\synthetic_v2\\brisc2025_synth_01193_pi_sa_t1.png",
+      "name": "brisc2025_synth_01193_pi_sa_t1.png"
+    },
+    {
+      "rank": 7,
+      "score": 3.6863197286868563,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_sa\\synthetic_v2\\brisc2025_synth_00945_pi_sa_t1.png",
+      "name": "brisc2025_synth_00945_pi_sa_t1.png"
+    },
+    {
+      "rank": 8,
+      "score": 3.6398419382574296,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_sa\\synthetic_v2\\brisc2025_synth_00821_pi_sa_t1.png",
+      "name": "brisc2025_synth_00821_pi_sa_t1.png"
+    },
+    {
+      "rank": 9,
+      "score": 3.6315465233819486,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_sa\\synthetic_v2\\brisc2025_synth_00177_pi_sa_t1.png",
+      "name": "brisc2025_synth_00177_pi_sa_t1.png"
+    },
+    {
+      "rank": 10,
+      "score": 3.6099431986094888,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_sa\\synthetic_v2\\brisc2025_synth_00501_pi_sa_t1.png",
+      "name": "brisc2025_synth_00501_pi_sa_t1.png"
+    },
+    {
+      "rank": 11,
+      "score": 3.5997291395485838,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_sa\\synthetic_v2\\brisc2025_synth_00249_pi_sa_t1.png",
+      "name": "brisc2025_synth_00249_pi_sa_t1.png"
+    },
+    {
+      "rank": 12,
+      "score": 3.584026058503964,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_sa\\synthetic_v2\\brisc2025_synth_00961_pi_sa_t1.png",
+      "name": "brisc2025_synth_00961_pi_sa_t1.png"
+    },
+    {
+      "rank": 13,
+      "score": 3.5823126648692662,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_sa\\synthetic_v2\\brisc2025_synth_00625_pi_sa_t1.png",
+      "name": "brisc2025_synth_00625_pi_sa_t1.png"
+    },
+    {
+      "rank": 14,
+      "score": 3.577146720929092,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_sa\\synthetic_v2\\brisc2025_synth_00121_pi_sa_t1.png",
+      "name": "brisc2025_synth_00121_pi_sa_t1.png"
+    },
+    {
+      "rank": 15,
+      "score": 3.5768195880376874,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_sa\\synthetic_v2\\brisc2025_synth_00561_pi_sa_t1.png",
+      "name": "brisc2025_synth_00561_pi_sa_t1.png"
+    },
+    {
+      "rank": 16,
+      "score": 3.57626296635636,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_sa\\synthetic_v2\\brisc2025_synth_01129_pi_sa_t1.png",
+      "name": "brisc2025_synth_01129_pi_sa_t1.png"
+    },
+    {
+      "rank": 17,
+      "score": 3.571797353150721,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_sa\\synthetic_v2\\brisc2025_synth_00369_pi_sa_t1.png",
+      "name": "brisc2025_synth_00369_pi_sa_t1.png"
+    },
+    {
+      "rank": 18,
+      "score": 3.56358407037709,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_sa\\synthetic_v2\\brisc2025_synth_01113_pi_sa_t1.png",
+      "name": "brisc2025_synth_01113_pi_sa_t1.png"
+    },
+    {
+      "rank": 19,
+      "score": 3.5630091079444153,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_sa\\synthetic_v2\\brisc2025_synth_00685_pi_sa_t1.png",
+      "name": "brisc2025_synth_00685_pi_sa_t1.png"
+    },
+    {
+      "rank": 20,
+      "score": 3.54924973290458,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_sa\\synthetic_v2\\brisc2025_synth_00189_pi_sa_t1.png",
+      "name": "brisc2025_synth_00189_pi_sa_t1.png"
+    },
+    {
+      "rank": 21,
+      "score": 3.545820625312044,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_sa\\synthetic_v2\\brisc2025_synth_01033_pi_sa_t1.png",
+      "name": "brisc2025_synth_01033_pi_sa_t1.png"
+    },
+    {
+      "rank": 22,
+      "score": 3.5447395410298768,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_sa\\synthetic_v2\\brisc2025_synth_00117_pi_sa_t1.png",
+      "name": "brisc2025_synth_00117_pi_sa_t1.png"
+    },
+    {
+      "rank": 23,
+      "score": 3.5369312867120364,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_sa\\synthetic_v2\\brisc2025_synth_01137_pi_sa_t1.png",
+      "name": "brisc2025_synth_01137_pi_sa_t1.png"
+    },
+    {
+      "rank": 24,
+      "score": 3.526455546164013,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_sa\\synthetic_v2\\brisc2025_synth_00761_pi_sa_t1.png",
+      "name": "brisc2025_synth_00761_pi_sa_t1.png"
+    }
+  ],
+  "glioma_co": [
+    {
+      "rank": 1,
+      "score": 4.589056733573773,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_co\\synthetic_v2\\brisc2025_synth_00181_gl_co_t1.png",
+      "name": "brisc2025_synth_00181_gl_co_t1.png"
+    },
+    {
+      "rank": 2,
+      "score": 4.306890908959951,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_co\\synthetic_v2\\brisc2025_synth_00850_gl_co_t1.png",
+      "name": "brisc2025_synth_00850_gl_co_t1.png"
+    },
+    {
+      "rank": 3,
+      "score": 4.27222936610846,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_co\\synthetic_v2\\brisc2025_synth_00811_gl_co_t1.png",
+      "name": "brisc2025_synth_00811_gl_co_t1.png"
+    },
+    {
+      "rank": 4,
+      "score": 4.25144317611139,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_co\\synthetic_v2\\brisc2025_synth_00370_gl_co_t1.png",
+      "name": "brisc2025_synth_00370_gl_co_t1.png"
+    },
+    {
+      "rank": 5,
+      "score": 4.242573743669374,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_co\\synthetic_v2\\brisc2025_synth_00502_gl_co_t1.png",
+      "name": "brisc2025_synth_00502_gl_co_t1.png"
+    },
+    {
+      "rank": 6,
+      "score": 4.222051941242123,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_co\\synthetic_v2\\brisc2025_synth_00727_gl_co_t1.png",
+      "name": "brisc2025_synth_00727_gl_co_t1.png"
+    },
+    {
+      "rank": 7,
+      "score": 4.19908102740554,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_co\\synthetic_v2\\brisc2025_synth_00409_gl_co_t1.png",
+      "name": "brisc2025_synth_00409_gl_co_t1.png"
+    },
+    {
+      "rank": 8,
+      "score": 4.191475967817028,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_co\\synthetic_v2\\brisc2025_synth_00742_gl_co_t1.png",
+      "name": "brisc2025_synth_00742_gl_co_t1.png"
+    },
+    {
+      "rank": 9,
+      "score": 4.181151887076566,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_co\\synthetic_v2\\brisc2025_synth_00643_gl_co_t1.png",
+      "name": "brisc2025_synth_00643_gl_co_t1.png"
+    },
+    {
+      "rank": 10,
+      "score": 4.180827260581152,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_co\\synthetic_v2\\brisc2025_synth_00838_gl_co_t1.png",
+      "name": "brisc2025_synth_00838_gl_co_t1.png"
+    },
+    {
+      "rank": 11,
+      "score": 4.180287336475288,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_co\\synthetic_v2\\brisc2025_synth_00568_gl_co_t1.png",
+      "name": "brisc2025_synth_00568_gl_co_t1.png"
+    },
+    {
+      "rank": 12,
+      "score": 4.179131745978006,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_co\\synthetic_v2\\brisc2025_synth_00355_gl_co_t1.png",
+      "name": "brisc2025_synth_00355_gl_co_t1.png"
+    },
+    {
+      "rank": 13,
+      "score": 4.1756263327505385,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_co\\synthetic_v2\\brisc2025_synth_00415_gl_co_t1.png",
+      "name": "brisc2025_synth_00415_gl_co_t1.png"
+    },
+    {
+      "rank": 14,
+      "score": 4.168914913963131,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_co\\synthetic_v2\\brisc2025_synth_00808_gl_co_t1.png",
+      "name": "brisc2025_synth_00808_gl_co_t1.png"
+    },
+    {
+      "rank": 15,
+      "score": 4.163065759117655,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_co\\synthetic_v2\\brisc2025_synth_00316_gl_co_t1.png",
+      "name": "brisc2025_synth_00316_gl_co_t1.png"
+    },
+    {
+      "rank": 16,
+      "score": 4.16108605000295,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_co\\synthetic_v2\\brisc2025_synth_00097_gl_co_t1.png",
+      "name": "brisc2025_synth_00097_gl_co_t1.png"
+    },
+    {
+      "rank": 17,
+      "score": 4.152083297954112,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_co\\synthetic_v2\\brisc2025_synth_00016_gl_co_t1.png",
+      "name": "brisc2025_synth_00016_gl_co_t1.png"
+    },
+    {
+      "rank": 18,
+      "score": 4.146674511691236,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_co\\synthetic_v2\\brisc2025_synth_00892_gl_co_t1.png",
+      "name": "brisc2025_synth_00892_gl_co_t1.png"
+    },
+    {
+      "rank": 19,
+      "score": 4.146419016036329,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_co\\synthetic_v2\\brisc2025_synth_00880_gl_co_t1.png",
+      "name": "brisc2025_synth_00880_gl_co_t1.png"
+    },
+    {
+      "rank": 20,
+      "score": 4.128166827402163,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_co\\synthetic_v2\\brisc2025_synth_00199_gl_co_t1.png",
+      "name": "brisc2025_synth_00199_gl_co_t1.png"
+    },
+    {
+      "rank": 21,
+      "score": 4.122039434126822,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_co\\synthetic_v2\\brisc2025_synth_00433_gl_co_t1.png",
+      "name": "brisc2025_synth_00433_gl_co_t1.png"
+    },
+    {
+      "rank": 22,
+      "score": 4.118345892016723,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_co\\synthetic_v2\\brisc2025_synth_00874_gl_co_t1.png",
+      "name": "brisc2025_synth_00874_gl_co_t1.png"
+    },
+    {
+      "rank": 23,
+      "score": 4.114398444636452,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_co\\synthetic_v2\\brisc2025_synth_00319_gl_co_t1.png",
+      "name": "brisc2025_synth_00319_gl_co_t1.png"
+    },
+    {
+      "rank": 24,
+      "score": 4.107969646316406,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\glioma_co\\synthetic_v2\\brisc2025_synth_00106_gl_co_t1.png",
+      "name": "brisc2025_synth_00106_gl_co_t1.png"
+    }
+  ],
+  "pituitary_ax": [
+    {
+      "rank": 1,
+      "score": 4.847037124114309,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_ax\\synthetic_v2\\brisc2025_synth_00394_pi_ax_t1.png",
+      "name": "brisc2025_synth_00394_pi_ax_t1.png"
+    },
+    {
+      "rank": 2,
+      "score": 4.826554267530969,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_ax\\synthetic_v2\\brisc2025_synth_00574_pi_ax_t1.png",
+      "name": "brisc2025_synth_00574_pi_ax_t1.png"
+    },
+    {
+      "rank": 3,
+      "score": 4.783033549381238,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_ax\\synthetic_v2\\brisc2025_synth_00091_pi_ax_t1.png",
+      "name": "brisc2025_synth_00091_pi_ax_t1.png"
+    },
+    {
+      "rank": 4,
+      "score": 4.780524103410513,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_ax\\synthetic_v2\\brisc2025_synth_00436_pi_ax_t1.png",
+      "name": "brisc2025_synth_00436_pi_ax_t1.png"
+    },
+    {
+      "rank": 5,
+      "score": 4.748027451731505,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_ax\\synthetic_v2\\brisc2025_synth_00031_pi_ax_t1.png",
+      "name": "brisc2025_synth_00031_pi_ax_t1.png"
+    },
+    {
+      "rank": 6,
+      "score": 4.744285472753568,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_ax\\synthetic_v2\\brisc2025_synth_00721_pi_ax_t1.png",
+      "name": "brisc2025_synth_00721_pi_ax_t1.png"
+    },
+    {
+      "rank": 7,
+      "score": 4.736888173507975,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_ax\\synthetic_v2\\brisc2025_synth_00109_pi_ax_t1.png",
+      "name": "brisc2025_synth_00109_pi_ax_t1.png"
+    },
+    {
+      "rank": 8,
+      "score": 4.716284179778745,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_ax\\synthetic_v2\\brisc2025_synth_00364_pi_ax_t1.png",
+      "name": "brisc2025_synth_00364_pi_ax_t1.png"
+    },
+    {
+      "rank": 9,
+      "score": 4.7157794271830795,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_ax\\synthetic_v2\\brisc2025_synth_00565_pi_ax_t1.png",
+      "name": "brisc2025_synth_00565_pi_ax_t1.png"
+    },
+    {
+      "rank": 10,
+      "score": 4.682338484342965,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_ax\\synthetic_v2\\brisc2025_synth_00607_pi_ax_t1.png",
+      "name": "brisc2025_synth_00607_pi_ax_t1.png"
+    },
+    {
+      "rank": 11,
+      "score": 4.656590317711789,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_ax\\synthetic_v2\\brisc2025_synth_00691_pi_ax_t1.png",
+      "name": "brisc2025_synth_00691_pi_ax_t1.png"
+    },
+    {
+      "rank": 12,
+      "score": 4.653731192811924,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_ax\\synthetic_v2\\brisc2025_synth_00820_pi_ax_t1.png",
+      "name": "brisc2025_synth_00820_pi_ax_t1.png"
+    },
+    {
+      "rank": 13,
+      "score": 4.641554908301078,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_ax\\synthetic_v2\\brisc2025_synth_00775_pi_ax_t1.png",
+      "name": "brisc2025_synth_00775_pi_ax_t1.png"
+    },
+    {
+      "rank": 14,
+      "score": 4.638899004486149,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_ax\\synthetic_v2\\brisc2025_synth_00277_pi_ax_t1.png",
+      "name": "brisc2025_synth_00277_pi_ax_t1.png"
+    },
+    {
+      "rank": 15,
+      "score": 4.6370598365233935,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_ax\\synthetic_v2\\brisc2025_synth_00619_pi_ax_t1.png",
+      "name": "brisc2025_synth_00619_pi_ax_t1.png"
+    },
+    {
+      "rank": 16,
+      "score": 4.630752580027587,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_ax\\synthetic_v2\\brisc2025_synth_00679_pi_ax_t1.png",
+      "name": "brisc2025_synth_00679_pi_ax_t1.png"
+    },
+    {
+      "rank": 17,
+      "score": 4.630034873855061,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_ax\\synthetic_v2\\brisc2025_synth_00166_pi_ax_t1.png",
+      "name": "brisc2025_synth_00166_pi_ax_t1.png"
+    },
+    {
+      "rank": 18,
+      "score": 4.62271204532353,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_ax\\synthetic_v2\\brisc2025_synth_00610_pi_ax_t1.png",
+      "name": "brisc2025_synth_00610_pi_ax_t1.png"
+    },
+    {
+      "rank": 19,
+      "score": 4.614162592926983,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_ax\\synthetic_v2\\brisc2025_synth_00874_pi_ax_t1.png",
+      "name": "brisc2025_synth_00874_pi_ax_t1.png"
+    },
+    {
+      "rank": 20,
+      "score": 4.600994479730449,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_ax\\synthetic_v2\\brisc2025_synth_00547_pi_ax_t1.png",
+      "name": "brisc2025_synth_00547_pi_ax_t1.png"
+    },
+    {
+      "rank": 21,
+      "score": 4.558107960058003,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_ax\\synthetic_v2\\brisc2025_synth_00127_pi_ax_t1.png",
+      "name": "brisc2025_synth_00127_pi_ax_t1.png"
+    },
+    {
+      "rank": 22,
+      "score": 4.554701008766502,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_ax\\synthetic_v2\\brisc2025_synth_00460_pi_ax_t1.png",
+      "name": "brisc2025_synth_00460_pi_ax_t1.png"
+    },
+    {
+      "rank": 23,
+      "score": 4.551671614587779,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_ax\\synthetic_v2\\brisc2025_synth_00013_pi_ax_t1.png",
+      "name": "brisc2025_synth_00013_pi_ax_t1.png"
+    },
+    {
+      "rank": 24,
+      "score": 4.543452069882574,
+      "path": "C:\\Users\\norie\\OneDrive\\RA1\\stylegan3_results\\pituitary_ax\\synthetic_v2\\brisc2025_synth_00355_pi_ax_t1.png",
+      "name": "brisc2025_synth_00355_pi_ax_t1.png"
+    }
+  ]
+}
