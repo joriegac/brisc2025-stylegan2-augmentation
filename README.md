@@ -2,7 +2,7 @@
 ### A StyleGAN2-ADA Class-Plane Augmentation Study on BRISC 2025
 
 **Author:** José Rafael Noriega Cedeño  
-**Institution:** Faculty of Applied Science and Technology, Humber Polytechnic, Toronto, ON M9W 5L7  
+**Institution:** Faculty of Applied Sciences and Technology, Humber Polytechnic, Toronto, ON M9W 5L7  
 **Paper:** [`arXiv/noriega2026.pdf`](arXiv/noriega2026.pdf) — source at [`arXiv/noriega2026.tex`](arXiv/noriega2026.tex)
 
 ---
