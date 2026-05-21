@@ -78,5 +78,5 @@ figures/svg_embedded/brisc_raw_vs_preprocessed_mosaic.svg
 arXiv/noriega2026.pdf
 
 # Build artefacts of the arXiv submission pipeline
-arxiv_submission/
+# (arxiv_submission/ is now tracked as the authoritative arXiv-ready source)
 noriega2026_arxiv.tar.gz
